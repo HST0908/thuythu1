@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" 
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/fonts/monsterrat/stylesheet.css">
+    <title>Home page</title>
+</head>
+<body>
+
+    <!-- phần đầu trang -->
+    <header style="background: url('./assets/img/topheader.png'), lightgray -9.153px -85px / 100.749% 184.226% no-repeat;">
+        <div class="header__container header__container_fixed">
+            <div class="header__top">
+                <div class="header__top--logo">
+                    <a href="./index.html">
+                    <img src="./assets/img/logo.png" alt="">
+                    </a>
+                </div>
+                <ul class="header__top--right">
+                    <li class="header__right--item">
+                        <input type="text" placeholder="Tìm kiếm">
+                        <ion-icon class="search__input" name="search-outline"></ion-icon>
+                    </li>
+                    <li class="header__right--item">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        info@ilinkgroupvina.com
+                    </li>
+                    <li class="header__right--item">
+                        <ion-icon name="call-outline"></ion-icon>
+                        +84 965 001 161
+                    </li>
+                    <li class="header__right--item">
+                        <img src="./assets/img/covietnam.png" alt="" style="width: 28px; height: 28px;">
+                        VI
+                        <ion-icon name="chevron-down-outline"></ion-icon>
+                    </li>
+                </ul>
+            </div>
+            <ul class="sub__header__top">
+                <li class="sub__header--item active">Giới thiệu
+                    <div class="dropdown--link">
+                        <div>
+                            <a href="./about.html">Về I LINK</a>
+                            <span></span>
+                            <a href="./danhsachkh.html">Danh sách khách hàng</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="sub__header--item">Định cư Canada</li>
+                <li class="sub__header--item">Định cư Mỹ</li>
+                <li class="sub__header--item">Định cư Úc</li>
+                <li class="sub__header--item">Định cư Châu Âu</li>
+                <li class="sub__header--item">Nhà tuyển dụng</li>
+                <li class="sub__header--item">Tin tức</li>
+                <li class="sub__header--item">Liên hệ</li>
+            </div>
+        </ul>
+        <div class="tag__header">
+            <div class="tag__header--top">
+                <span>I LINK</span><span>GROUP</span>
+            </div>
+            <div class="tag__header--bottom">
+                <span>Job thật! Định cư thật!</span>
+            </div>
+            <a class="link__header" href="#">Tìm hiểu ngay<ion-icon name="arrow-forward-outline"></ion-icon></a>
+        </div>
+    </header>
+
+    <div class="body__content">
+
+        <!-- Thông tin tuyển dụng -->
+
+        <div class="container">
+            <div class="cointainer__top">
+                <h2>Thông tin nhà tuyển dụng</h2>
+                <span class="cointainer__top--line"></span>
+            </div>
+            <ul class="list__category">
+                <li class="category--item active">Định cư Canada</li>
+                <li class="category--item">Định cư Mỹ</li>
+                <li class="category--item">Định cư Úc</li>
+                <li class="category--item">Định cư Châu Âu</li>
+            </ul>
+            <ul class="list__category--item">
+                <span><ion-icon name="chevron-back-sharp"></ion-icon></span>
+                <li>
+                    <div style="background:url('./assets/img/anhlist1.png');"></div>
+                    <h3>Đào tạo tiếng anh</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptatem itaque vitae in delectus unde quam inventore adipisci dignissimos! Modi nesciunt harum excepturi itaque consequuntur dicta quia rerum illo obcaecati?</p>
+                </li>
+                <li>
+                    <div style="background:url('./assets/img/anhlist2.png');"></div>
+                    <h3>Du học Mỹ</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptatem itaque vitae in delectus unde quam inventore adipisci dignissimos! Modi nesciunt harum excepturi itaque consequuntur dicta quia rerum illo obcaecati?</p>
+                </li>
+                <li>
+                    <div style="background:url('./assets/img/anhlist3.png');"></div>
+                    <h3>Định cư Mỹ</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptatem itaque vitae in delectus unde quam inventore adipisci dignissimos! Modi nesciunt harum excepturi itaque consequuntur dicta quia rerum illo obcaecati?</p>
+                </li>
+                <li>
+                    <div style="background:url('./assets/img/anhlist4.png');"></div>
+                    <h3>Nhập cư Mỹ</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptatem itaque vitae in delectus unde quam inventore adipisci dignissimos! Modi nesciunt harum excepturi itaque consequuntur dicta quia rerum illo obcaecati?</p>
+                </li>
+                <span><ion-icon name="chevron-forward-sharp"></ion-icon></span>
+            </ul>
+        </div>
+
+        <!-- recomended -->
+
+        <div class="recomended">
+            <div class="cointainer__top">
+                <h2>Chương trình đề xuất</h2>
+                <span class="cointainer__top--line"></span>
+            </div>
+            <div class="content__recomended" style="background:url('./assets/img/recomended.png'), lightgray -567.368px -538.763px / 129.55% 243.889% no-repeat; height: 680px; flex-shrink: 0;">
+                <div>
+                    <div class="teamp">
+                        <div class="content__recomended--button">
+                            <span><ion-icon name="chevron-back-sharp"></ion-icon></span>
+                            <span><ion-icon name="chevron-forward-sharp"></ion-icon></span>
+                        </div>
+                    </div>
+                    <div class="teamp2">
+                        <div class="box">
+                            <div>
+                                Tổng quan chương trình định cư tỉnh bang Alberta
+                            </div>
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maiores optio suscipit esse quidem, illum explicabo quo repellat? Eveniet quam cupiditate, delectus dolore provident id necessitatibus minus error ipsam ex.</span>
+                        </div>
+                        <ul>
+                            <li>Địnhcư Canada AIP</li>
+                            <li>Địnhcư Canada AINP</li>
+                            <li>Định cư Mỹ EB-3</li>
+                            <li>Định cư Mỹ EB-5</li>
+                            <li>Định cư Châu Âu</li>
+                            <li>Định cư Úc</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tin tức định cư -->
+        <div class="container">
+            <div class="cointainer__top">
+                <h2>Tin tức định cư</h2>
+                <span class="cointainer__top--line"></span>
+            </div>
+            <ul class="list__category">
+                <li class="category--item active">Định cư Canada</li>
+                <li class="category--item">Định cư Mỹ</li>
+                <li class="category--item">Định cư Úc</li>
+                <li class="category--item">Định cư Châu Âu</li>
+            </ul>
+
+            <div class="container__new">
+                <div>
+                    <div class="container__new--left">
+                        <div class="new--left-image" style="background: url('./assets/img/new.png'), lightgray 50% / cover no-repeat;"></div>
+                        <div class="new--left-body">
+                            <h3>Đôi nét đất nước Canada</h3>
+                            <span></span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, corrupti neque voluptate assumenda necessitatibus placeat eius harum, totam, cumque esse tempora laboriosam quia? Quo adipisci ex facilis consequatur accusamus hic?</p>
+                            <div class="new--left-sub-body">
+                                <span>08,Tháng 08,2023</span>
+                                <span><ion-icon name="arrow-forward-sharp"></ion-icon></span>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="container__new--right">
+                        <li class="container__new--right--item">
+                            <div style="background: url('./assets/img/new2.png'), lightgray 0px -57.087px / 100% 134.842% no-repeat;"></div>
+                            <div class="new__right--content">
+                                <h3>Nova Scotia Công Bố Các Mục Tiêu Nhập Cư Mới Cho Năm 2022</h3>
+                                <span></span>
+                                <p>
+                                    Nova Scotia là tỉnh bang rất tích cực tạo điều kiện cho người nhập cư Canada. Trong những năm vừa qua, số lượng dân số nhập cư của tỉnh bang này luôn đạt ở mức cao, giải quyết được vấn đề thiếu hụt nhân lực ở tỉnh bang này.
+                                </p>
+                                <div class="new--left-sub-body sub--right-body">
+                                    <span>08,Tháng 08,2023</span>
+                                    <span><ion-icon name="arrow-forward-sharp"></ion-icon></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="container__new--right--item">
+                            <div style="background: url('./assets/img/new2.png'), lightgray 0px -57.087px / 100% 134.842% no-repeat;"></div>
+                            <div class="new__right--content">
+                                <h3>Nova Scotia Công Bố Các Mục Tiêu Nhập Cư Mới Cho Năm 2022</h3>
+                                <span></span>
+                                <p>
+                                    Nova Scotia là tỉnh bang rất tích cực tạo điều kiện cho người nhập cư Canada. Trong những năm vừa qua, số lượng dân số nhập cư của tỉnh bang này luôn đạt ở mức cao, giải quyết được vấn đề thiếu hụt nhân lực ở tỉnh bang này.
+                                </p>
+                                <div class="new--left-sub-body sub--right-body">
+                                    <span>08,Tháng 08,2023</span>
+                                    <span><ion-icon name="arrow-forward-sharp"></ion-icon></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="container__new--right--item">
+                            <div style="background: url('./assets/img/new2.png'), lightgray 0px -57.087px / 100% 134.842% no-repeat;"></div>
+                            <div class="new__right--content">
+                                <h3>Nova Scotia Công Bố Các Mục Tiêu Nhập Cư Mới Cho Năm 2022</h3>
+                                <span></span>
+                                <p>
+                                    Nova Scotia là tỉnh bang rất tích cực tạo điều kiện cho người nhập cư Canada. Trong những năm vừa qua, số lượng dân số nhập cư của tỉnh bang này luôn đạt ở mức cao, giải quyết được vấn đề thiếu hụt nhân lực ở tỉnh bang này.
+                                </p>
+                                <div class="new--left-sub-body sub--right-body">
+                                    <span>08,Tháng 08,2023</span>
+                                    <span><ion-icon name="arrow-forward-sharp"></ion-icon></span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <span>Xem Thêm<ion-icon name="chevron-down-outline"></ion-icon></span>
+            </div>
+        </div>
+        
+        <!-- information -->
+        <div class="information">
+            <div class="cointainer__top">
+                <h2>Thông Tin</h2>
+                <span class="cointainer__top--line"></span>
+            </div>
+            <div class="information__box">
+
+                <div class="information__box--about">
+                    <div class="head__box_infor">
+                        <div>
+                            <span></span>
+                            <span>Về I Link Group</span>
+                        </div>
+                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </div>
+                    <div class="body__box body__box_infor">
+                        <div class="body__box_infor-image" style="background: url('./assets/img/new.png'), lightgray 0px -215.894px / 100% 255.292% no-repeat;"></div>
+                        <div class="body__box_infor-content">
+                            <h2>Về I Link Group</h2>
+                            <span class="horizontal"></span>
+                            <p>I Link Group xác định tầm nhìn trở thành Công ty hàng đầu trong lĩnh vực Đào tạo Tiếng Hàn và Định Cư Canada.</p>
+                            <span>08, tháng 08, 2022</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="information__box--calender">
+                    <div class="head__box_infor">
+                        <div>
+                            <span></span>
+                            <span>Lịch hội thảo</span>
+                        </div>
+                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </div>
+                    <ul class="body__box box--calender-body">
+                        <li class="customer_body--item">
+                            <div>
+                                <h2>09</h2>
+                                <span>09-2022</span>
+                            </div>
+                            <span></span>
+                            <p>Gặp gỡ đại diện Urban International School Canada Gặp gỡ đại diện Urban International School Canada Gặp gỡ đại diện Urban International School Canada</p>
+                        </li>
+                        <li class="customer_body--item">
+                            <div>
+                                <h2>11</h2>
+                                <span>09-2022</span>
+                            </div>
+                            <span></span>
+                            <p>Gặp gỡ đại diện Urban International School Canada Gặp gỡ đại diện Urban International School Canada Gặp gỡ đại diện Urban International School Canada</p>
+                        </li>
+                        <li class="customer_body--item">
+                            <div>
+                                <h2>20</h2>
+                                <span>09-2022</span>
+                            </div>
+                            <span></span>
+                            <p>Gặp gỡ đại diện Urban International School Canada Gặp gỡ đại diện Urban International School Canada Gặp gỡ đại diện Urban International School Canada</p>
+                        </li>
+                        <li class="customer_body--item">
+                            <div>
+                                <h2>26</h2>
+                                <span>09-2022</span>
+                            </div>
+                            <span></span>
+                            <p>Gặp gỡ đại diện Urban International School Canada</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="information__box--customer">
+                    <div class="head__box_infor">
+                        <div>
+                            <span></span>
+                            <span>Hồ sơ khách hàng</span>
+                        </div>
+                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </div>
+                    <ul class="body__box customer_body">
+                        <li>Anh <strong>Nguyễn Văn A</strong> đã hoàn tất hồ sơ định cư du học Canada</li>
+                        <li>Anh <strong>Nguyễn Văn A</strong> đã hoàn tất hồ sơ định cư du học Canada</li>
+                        <li>Anh <strong>Nguyễn Văn A</strong> đã hoàn tất hồ sơ định cư du học Canada</li>
+                        <li>Anh <strong>Nguyễn Văn A</strong> đã hoàn tất hồ sơ định cư du học Canada</li>
+                        <li>Anh <strong>Nguyễn Văn A</strong> đã hoàn tất hồ sơ định cư du học Canada</li>
+                        <li>Anh <strong>Nguyễn Văn A</strong> đã hoàn tất hồ sơ định cư du học Canada</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Video -->
+        <div class="videoclip">
+            <div class="cointainer__top">
+                <h2>Video clip</h2>
+                <span class="cointainer__top--line"></span>
+            </div>
+            <div class="videoclip__box">
+
+                <div class="information__box--about">
+                    <div class="head__box_infor  head__box_video">
+                        <div>
+                            <span></span>
+                            <span>Video Youtube</span>
+                        </div>
+
+                        <div>
+                            <label>Xem thêm</label>
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="body__box">
+                        <ul class="list__video">
+                            <li class="list__video--item">
+                                <div>
+                                    <img src="./assets/img/videoclip1.png" alt="">
+                                    <button style="background: rgba(255, 255, 255, 0.40);">
+                                        <ion-icon name="caret-forward-outline"></ion-icon>
+                                    </button>
+                                </div>
+                                <div>
+                                    <h3>IRCC Củng Cố Hệ Thống Nhập Cư Canada</h3>
+                                    <span>08, tháng 08, 2022</span>
+                                </div>
+                            </li>
+                            <li class="list__video--item">
+                                <div>
+                                    <img src="./assets/img/videoclip1.png" alt="">
+                                    <button style="background: rgba(255, 255, 255, 0.40);">
+                                        <ion-icon name="caret-forward-outline"></ion-icon>
+                                    </button>
+                                </div>
+                                <div>
+                                    <h3>IRCC Củng Cố Hệ Thống Nhập Cư Canada</h3>
+                                    <span>08, tháng 08, 2022</span>
+                                </div>
+                            </li>
+                            <li class="list__video--item">
+                                <div>
+                                    <img src="./assets/img/videoclip1.png" alt="">
+                                    <button style="background: rgba(255, 255, 255, 0.40);">
+                                        <ion-icon name="caret-forward-outline"></ion-icon>
+                                    </button>
+                                </div>
+                                <div>
+                                    <h3>IRCC Củng Cố Hệ Thống Nhập Cư Canada</h3>
+                                    <span>08, tháng 08, 2022</span>
+                                </div>
+                            </li>
+                            <li class="list__video--item">
+                                <div>
+                                    <img src="./assets/img/videoclip1.png" alt="">
+                                    <button style="background: rgba(255, 255, 255, 0.40);">
+                                        <ion-icon name="caret-forward-outline"></ion-icon>
+                                    </button>
+                                </div>
+                                <div>
+                                    <h3>IRCC Củng Cố Hệ Thống Nhập Cư Canada IRCC Củng Cố Hệ Thống Nhập Cư Canada IRCC Củng Cố Hệ Thống Nhập Cư Canada IRCC Củng Cố Hệ Thống Nhập Cư Canada</h3>
+                                    <span>08, tháng 08, 2022</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="information__box--calender">
+                    <div class="head__box_infor  head__box_video">
+                        <div>
+                            <span></span>
+                            <span>Lịch hội thảo</span>
+                        </div>
+                        
+                        <div>
+                            <label>Xem thêm</label>
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <ul class="body__box list__video">
+                        <li class="list__video--item">
+                            <div>
+                                <img src="./assets/img/videoclip1.png" alt="">
+                                <button style="background: rgba(255, 255, 255, 0.40);">
+                                    <ion-icon name="caret-forward-outline"></ion-icon>
+                                </button>
+                            </div>
+                            <div>
+                                <h3>IRCC Củng Cố Hệ Thống Nhập Cư Canada</h3>
+                                <span>08, tháng 08, 2022</span>
+                            </div>
+                        </li>
+                        <li class="list__video--item">
+                            <div>
+                                <img src="./assets/img/videoclip1.png" alt="">
+                                <button style="background: rgba(255, 255, 255, 0.40);">
+                                    <ion-icon name="caret-forward-outline"></ion-icon>
+                                </button>
+                            </div>
+                            <div>
+                                <h3>IRCC Củng Cố Hệ Thống Nhập Cư Canada</h3>
+                                <span>08, tháng 08, 2022</span>
+                            </div>
+                        </li>
+                        <li class="list__video--item">
+                            <div>
+                                <img src="./assets/img/videoclip1.png" alt="">
+                                <button style="background: rgba(255, 255, 255, 0.40);">
+                                    <ion-icon name="caret-forward-outline"></ion-icon>
+                                </button>
+                            </div>
+                            <div>
+                                <h3>IRCC Củng Cố Hệ Thống Nhập Cư Canada</h3>
+                                <span>08, tháng 08, 2022</span>
+                            </div>
+                        </li>
+                        <li class="list__video--item">
+                            <div>
+                                <img src="./assets/img/videoclip1.png" alt="">
+                                <button style="background: rgba(255, 255, 255, 0.40);">
+                                    <ion-icon name="caret-forward-outline"></ion-icon>
+                                </button>
+                            </div>
+                            <div>
+                                <h3>IRCC Củng Cố Hệ Thống Nhập Cư Canada IRCC Củng Cố Hệ Thống Nhập Cư Canada IRCC Củng Cố Hệ Thống Nhập Cư Canada IRCC Củng Cố Hệ Thống Nhập Cư Canada</h3>
+                                <span>08, tháng 08, 2022</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- photo -->
+        <div class="container__photo">
+            <div class="cointainer__top">
+                <h2>Hình ảnh công ty</h2>
+                <span class="cointainer__top--line"></span>
+            </div>
+            <div class="photo__box">
+                <div class="photo__box--about">
+                    <div>
+                        <div class="head__box_infor">
+                            <div class="photo__box--about-left">
+                                <span></span>
+                                <span>Hoạt động công ty</span>
+                            </div>
+                            <div>
+                                <ion-icon name="chevron-back-outline"></ion-icon>
+                                <ion-icon name="chevron-forward-outline"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="body__box photo__box-left">
+                            <div class="body__box_photo">
+                                <div class="body__box_photo-image" style="background: url('./assets/img/new.png'), lightgray 0px -215.894px / 100% 255.292% no-repeat;"></div>
+                                <div class="body__box_photo-content">
+                                    <p> Chương Trình Hỗ Trợ Tổ Công Tác Phòng Chống Dịch Quận Bình Thạnh</p>
+                                </div>
+                            </div>
+                            <ul class="photo__box--about-right">
+                                <li>
+                                    <!-- <img src="./assets/img/anhcongty.png" alt=""> -->
+                                    <div style="border-radius: 10px 10px 0px 0px;
+                                    background: url('./assets/img/anhcongty.png'), lightgray 0px -140.397px / 100% 265.923% no-repeat;"></div>
+                                    <div>
+                                        <p>Ra Mắt Đội Ngũ I Link Group Chi Nhánh Hà Nội Ra Mắt Đội Ngũ I Link Group Chi Nhánh Hà Nội Ra Mắt Đội Ngũ I Link Group Chi Nhánh Hà Nội Ra Mắt Đội Ngũ I Link Group Chi Nhánh Hà Nội</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <!-- <img src="./assets/img/anhcongty.png" alt=""> -->
+                                    <div style="border-radius: 10px 10px 0px 0px;
+                                    background: url('./assets/img/anhcongty.png'), lightgray 0px -140.397px / 100% 265.923% no-repeat;"></div>
+                                    <div>
+                                        <p>Ra Mắt Đội Ngũ I Link Group Chi Nhánh Hà Nội</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="social">
+                    <div class="head__box_infor head__box_social">
+                        <div class="photo__box--about-left">
+                            <span></span>
+                            <span>Hoạt động Xã hội</span>
+                        </div>
+                        <div>
+                            <ion-icon name="chevron-back-outline"></ion-icon>
+                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="body__box social__content">
+                        <div class="social__content-img" style="background: url('./assets/img/social.png');"></div>
+                        <div class="social__content-title">
+                            <p>
+                                Điều Kiện Chương Trình Nhập Cư Đại Tây Dương Theo Diện Tay Nghề Trình Độ Trung Cấp
+                                Điều Kiện Chương Trình Nhập Cư Đại Tây Dương Theo Diện Tay Nghề Trình Độ Trung Cấp
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- register of conclussion -->
+        <div class="register_conclusion" style="background: rgba(12, 38, 93, 0.05);">
+            <div class="register_conclussion--left" style="background: url('./assets/img/rgconclussion.png'), lightgray -250.016px -579.499px / 157.607% 269.658% no-repeat;">
+                <div>
+                    <div class="conclussion--left-box">
+                        <div>
+                            <div class="conclussion--left-box-logo" style="background: url('./assets/img/vientranglogo.png');"></div>
+                            <div class="conclussion--left-box-header">Công ty TNHH I Link Group</div>
+                            <span class="conclussion--left-box-content">
+                                <strong>Địa chỉ: </strong>168/67 Nguyễn Gia Trí, Phường 25, Bình Thạnh, Thành phố Hồ Chí Minh
+                            </span>
+                        </div>
+                    </div>
+                    <div class="conclussion--left-bottom">
+                        <span>Hotline: +84 965 001 161</span>
+                        <span>Thời gian làm việc: 08:00 - 17:00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="register_conclussion-right">
+                <svg xmlns="http://www.w3.org/2000/svg" width="109" height="109" viewBox="0 0 109 109" fill="none">
+                    <path d="M54.6732 108.475C84.4844 108.475 108.651 84.2785 108.651 54.4302C108.651 24.5819 84.4844 0.38501 54.6732 0.38501C24.862 0.38501 0.695312 24.5819 0.695312 54.4302C0.695312 84.2785 24.862 108.475 54.6732 108.475Z" fill="#0C265D"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="395" height="642" viewBox="0 0 395 642" fill="none">
+                    <path d="M658.41 178.533C642.494 108.552 583.326 25.0587 488.172 7.04361C488.172 7.04361 600.28 67.3248 613.083 177.494C625.885 287.663 542.15 374.62 446.997 401.989C351.843 429.358 195.1 430.744 134.894 382.935C134.894 382.935 163.613 359.723 244.926 335.126C326.238 310.528 394.057 258.908 442.845 188.926C491.632 118.945 491.632 17.4369 486.096 0.461182C486.096 0.461182 457.377 126.567 339.041 204.863C220.705 283.506 165.689 262.372 98.9084 321.268C98.9084 321.268 56.6949 264.451 132.818 172.297C132.818 172.297 39.7403 196.548 34.5501 304.639C33.5121 323.693 37.6642 345.172 45.9685 367.345C-23.926 464.003 7.21515 545.07 7.21515 545.07C30.398 580.061 34.5501 576.943 34.5501 576.943C32.128 482.364 64.6532 441.83 78.8397 428.665C139.738 516.316 260.15 605.698 424.852 641.728C424.852 641.728 178.491 440.444 151.848 407.186C151.848 407.186 300.98 480.632 473.294 434.208C645.954 387.439 674.327 248.515 658.41 178.533Z" fill="#0C265D"/>
+                </svg>
+                <div class="conclussion-right">
+                    <div class="conclussion-right__box">
+                        <div class="conclussion-right__box--top">
+                            <div>
+                                <span></span>
+                                <h2>Đăng ký tư vấn</h2>
+                            </div>
+                            <p>
+                                Bạn đang muốn tìm hiểu về du học, định cư nhưng bạn đang phân vân không biết lựa chọn và lộ trình dịch vụ như thế nào. Hãy để chúng tôi giúp bạn!
+                            </p>
+                        </div>
+                        <form class="conclussion-right__box--body">
+                            <div class="box--body-row">
+                                <input class="box--body-row-item" type="text" name="ten" placeholder="Họ và tên">
+                                <input class="box--body-row-item" type="text" name="phone" placeholder="Số điện thoại">
+                            </div>
+                            <div class="box--body-row">
+                                <input class="box--body-row-item" type="text" name="email" placeholder="Email">
+                                <select class="box--body-row-item" name="" id="">
+                                    <option value="Định cư Châu Âu">Định cư Châu Âu</option>
+                                    <option value="Nhập cư Châu Âu">Nhập cư Châu Âu</option>
+                                    <option value="Nhập cư Châu Âu">Nhập cư Châu Âu</option>
+                                </select>
+                            </div>
+                            <div class="box--body-row">
+                                <textarea class="box--body-row-item box--body-row-item--nd" name="" id="" cols="20" rows="4" placeholder="Nội dung..."></textarea>
+                            </div>
+                        </form>
+                        <button class="btn btn__send">
+                            <span>Gửi ngay</span>
+                            <img src="./assets/img/send.png" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- counselors -->
+
+        <div class="counselors">
+            <div class="cointainer__top">
+                <h2>Chuyên viên tư vấn</h2>
+                <span class="cointainer__top--line cointainer__top--line-counselors"></span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="counselors__box">
+                <ion-icon name="chevron-back-outline"></ion-icon>
+                <ul class="counselors__list">
+                    <li class="counselors__list--item">
+                        <div style="border-radius: 204px;
+                        background: url('./assets/img/mranhngoc.svg'), lightgray -101.358px -14.016px / 217.344% 122.256% no-repeat;"></div>
+                        <span>Ms. Phan Ánh Ngọc</span>
+                    </li>
+                    <li class="counselors__list--item">
+                        <div style="border-radius: 204px;
+                        background: url('./assets/img/mrphuong.svg'), lightgray -101.358px -14.016px / 217.344% 122.256% no-repeat;"></div>
+                        <span>Mr. Lê Văn Phương</span>
+                    </li>
+                    <li class="counselors__list--item">
+                        <div style="border-radius: 204px;
+                        background: url('./assets/img/mrhanh.svg'), lightgray -101.358px -14.016px / 217.344% 122.256% no-repeat;"></div>
+                        <span>Ms. Lê Thị Hồng Hạnh</span>
+                    </li>
+                    <li class="counselors__list--item">
+                        <div style="border-radius: 204px;
+                        background: url('./assets/img/mrthu.svg'), lightgray -101.358px -14.016px / 217.344% 122.256% no-repeat;"></div>
+                        <span>Ms. Vũ Anhh Thư</span>
+                    </li>
+                </ul>
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+            </div>
+        </div>
+
+        <!-- partners customers -->
+        <div class="partners_customers">
+            <div class="partners_customers__box" style="background: url(./assets/img/background.png);">
+                <div class="cointainer__top">
+                    <h2>Đối tác khách hàng</h2>
+                    <span class="cointainer__top--line cointainer__top--line-counselors"></span>
+                </div>
+                <div class="partners_customers__box--content">
+                    <ul>
+                        <li><img src="./assets/img/logonhanhang1.png" alt=""></li>
+                        <li><img src="./assets/img/logonhanhang2.png" alt=""></li>
+                        <li><img src="./assets/img/logonhanhang3.png" alt=""></li>
+                        <li><img src="./assets/img/logonhanhang4.png" alt=""></li>
+                        <li><img src="./assets/img/logonhanhang5.png" alt=""></li>
+                        <li><img src="./assets/img/logonhanhang6.png" alt=""></li>
+                    </ul>
+                    <div>
+                        <div>
+                            <label for=""></label>
+                            <label class="active" for=""></label>
+                            <label for=""></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="partners_customers__box--content-bottom">
+                    <span>Liên kết nhanh:</span>
+                    <div class="list__link">
+                        <a href="#">LAS ACADEMY</a>
+                        <a href="#">Xác nhận ngành nghề</a>
+                        <a href="#">Xác nhận tình hình tiến hành hồ sơ</a>
+                    </div>
+                    <div class="nutnhan">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                            <path d="M17.0326 21.5325L11 15.4999L17.0326 9.46729" stroke="#0C265D" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="15.5" cy="15.5" r="15" stroke="#0C265D"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                            <path d="M12.9668 9.71875L18.9994 15.5L12.9668 21.2812" stroke="#0C265D" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="15.5" cy="15.5" r="15" stroke="#0C265D"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul class="contact__list">
+            <li class="contact__list--item contact__list--item-fb">
+                <svg xmlns="http://www.w3.org/2000/svg" width="39" height="74" viewBox="0 0 39 74" fill="none">
+                    <path d="M36.373 40.8691L38.3953 27.7179H25.7766V19.1909C25.7766 15.5913 27.5359 12.0861 33.1914 12.0861H38.9278V0.889778C35.5589 0.345128 32.1548 0.0477418 28.7425 0C18.3281 0 11.5873 6.29585 11.5873 17.7012V27.7247H0V40.8691H11.5873V72.6652C16.2997 73.4021 21.0979 73.4021 25.8103 72.6652V40.8691H36.373Z" fill="white"/>
+                </svg>
+                <span>Facebook</span>
+            </li>
+            <li class="contact__list--item contact__list--item-yt">
+                <svg xmlns="http://www.w3.org/2000/svg" width="90" height="63" viewBox="0 0 90 63" fill="none">
+                    <g clip-path="url(#clip0_1405_28750)">
+                        <path d="M88.1 9.8C87.1 5.9 84 2.9 80.1 1.8C73.1 0 45 0 45 0C45 0 16.9 0 9.8 1.9C5.9 2.9 2.9 6 1.8 9.9C0 16.9 0 31.5 0 31.5C0 31.5 0 46.1 1.9 53.2C2.9 57.1 6 60.1 9.9 61.2C16.9 63 45 63 45 63C45 63 73.1 63 80.2 61.1C84.1 60.1 87.1 57 88.2 53.1C90.1 46.1 90.1 31.4 90.1 31.4C90.1 31.4 90 16.9 88.1 9.8ZM36 45V18L59.4 31.5L36 45Z" fill="white"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_1405_28750">
+                            <rect width="90" height="63" fill="white"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+                <span>Youtobe</span>
+            </li>
+            <li class="contact__list--item contact__list--item-ins">
+                <svg xmlns="http://www.w3.org/2000/svg" width="73" height="73" viewBox="0 0 73 73" fill="none">
+                    <g clip-path="url(#clip0_1405_28755)">
+                        <path d="M36.5 6.61294C46.2047 6.61294 47.4071 6.61294 51.2718 6.78471C54.7929 6.95647 56.7682 7.55765 58.0565 8.07294C59.7741 8.76 60.9765 9.53294 62.2647 10.8212C63.5529 12.1094 64.3259 13.3118 65.0129 15.0294C65.5282 16.3176 66.1294 18.2071 66.3012 21.8141C66.4729 25.6788 66.4729 26.7953 66.4729 36.5859C66.4729 46.3765 66.4729 47.4929 66.3012 51.3576C66.1294 54.8788 65.5282 56.8541 65.0129 58.1423C64.3259 59.86 63.5529 61.0624 62.2647 62.3506C60.9765 63.6388 59.7741 64.4118 58.0565 65.0988C56.7682 65.6141 54.8788 66.2153 51.2718 66.3871C47.4071 66.5588 46.2906 66.5588 36.5 66.5588C26.7953 66.5588 25.5929 66.5588 21.7282 66.3871C18.2071 66.2153 16.2318 65.6141 14.9435 65.0988C13.2259 64.4118 12.0235 63.6388 10.7353 62.3506C9.44706 61.0624 8.67412 59.86 7.98706 58.1423C7.47177 56.8541 6.87059 54.9647 6.69882 51.3576C6.52706 47.4929 6.52706 46.3765 6.52706 36.5859C6.52706 26.7953 6.52706 25.6788 6.69882 21.8141C6.87059 18.2929 7.47177 16.3176 7.98706 15.0294C8.67412 13.3118 9.44706 12.1094 10.7353 10.8212C12.0235 9.53294 13.2259 8.76 14.9435 8.07294C16.2318 7.55765 18.1212 6.95647 21.7282 6.78471C25.5929 6.61294 26.7953 6.61294 36.5 6.61294ZM36.5 0C26.6235 0 25.3353 0 21.4706 0.257647C17.6059 0.429412 14.9435 1.03059 12.6247 1.97529C10.22 2.92 8.15882 4.12235 6.18353 6.18353C4.12235 8.24471 2.92 10.22 1.97529 12.6247C1.03059 14.9435 0.429412 17.6059 0.257647 21.4706C0 25.3353 0 26.6235 0 36.5C0 46.3765 0 47.6647 0.257647 51.5294C0.429412 55.3941 1.03059 58.0565 1.97529 60.3753C2.92 62.78 4.12235 64.8412 6.18353 66.8165C8.24471 68.8776 10.22 70.08 12.6247 71.0247C14.9435 71.9694 17.6059 72.5706 21.4706 72.7423C25.3353 73 26.6235 73 36.5 73C46.3765 73 47.6647 73 51.5294 72.7423C55.3941 72.5706 58.0565 71.9694 60.3753 71.0247C62.78 70.08 64.8412 68.8776 66.8165 66.8165C68.8776 64.7553 70.08 62.78 71.0247 60.3753C71.9694 58.0565 72.5706 55.3941 72.7423 51.5294C73 47.6647 73 46.3765 73 36.5C73 26.6235 73 25.3353 72.7423 21.4706C72.5706 17.6059 71.9694 14.9435 71.0247 12.6247C70.08 10.22 68.8776 8.15882 66.8165 6.18353C64.7553 4.12235 62.78 2.92 60.3753 1.97529C58.0565 1.03059 55.3941 0.429412 51.5294 0.257647C47.6647 0 46.3765 0 36.5 0Z" fill="white"/>
+                        <path d="M36.4997 17.7778C26.1079 17.7778 17.7773 26.1943 17.7773 36.5002C17.7773 46.8061 26.1938 55.2225 36.4997 55.2225C46.8915 55.2225 55.222 46.8061 55.222 36.5002C55.222 26.1943 46.8915 17.7778 36.4997 17.7778ZM36.4997 48.6955C29.8009 48.6955 24.3044 43.2849 24.3044 36.5002C24.3044 29.7155 29.715 24.3049 36.4997 24.3049C43.2844 24.3049 48.695 29.7155 48.695 36.5002C48.695 43.2849 43.1985 48.6955 36.4997 48.6955Z" fill="white"/>
+                        <path d="M55.9952 21.3845C58.4142 21.3845 60.3752 19.4235 60.3752 17.0045C60.3752 14.5855 58.4142 12.6245 55.9952 12.6245C53.5762 12.6245 51.6152 14.5855 51.6152 17.0045C51.6152 19.4235 53.5762 21.3845 55.9952 21.3845Z" fill="white"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_1405_28755">
+                            <rect width="73" height="73" fill="white"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+                <span>Instagram</span>
+            </li>
+            <li class="contact__list--item contact__list--item-zalo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="74" height="70" viewBox="0 0 74 70" fill="none">
+                    <path d="M22.3531 69.936C17.9629 69.936 13.5566 70.0803 9.16637 69.92C3.97209 69.7116 0 65.3666 0 60.188C0 43.4656 0.0321627 26.7432 0 10.0047C0 4.28096 4.4867 0.288746 9.64881 0.144449C15.0521 0.000152618 20.4716 0.112383 25.891 0.112383C25.9875 0.112383 26.1161 0.0642845 26.1644 0.224614C26.1322 0.513208 25.8427 0.545274 25.6658 0.657505C22.4817 2.51733 19.571 4.74591 17.1266 7.50359C13.0902 12.057 10.2921 17.2837 9.34327 23.3602C7.67081 34.0863 11.0318 43.193 18.6383 50.7926C19.9891 52.1554 20.166 53.2136 19.0886 55.0414C17.786 57.2379 15.808 58.729 13.7013 60.0918C13.4762 60.22 13.251 60.3804 13.0259 60.5247C12.6882 60.8132 12.8972 60.9575 13.1867 61.0858C13.251 61.2301 13.3314 61.3584 13.4279 61.4866C15.2773 63.122 17.0302 64.8696 18.8473 66.537C19.6997 67.3226 20.552 68.1403 21.3721 68.958C21.7098 69.2626 22.2727 69.3588 22.3531 69.936Z" fill="white"/>
+                    <path d="M22.3539 69.936C22.2735 69.3748 21.7106 69.2786 21.3729 68.9419C20.5528 68.1082 19.7004 67.3066 18.8481 66.521C17.0309 64.8535 15.2781 63.1059 13.4287 61.4706C13.3322 61.3423 13.2518 61.214 13.1875 61.0697C17.2882 61.8714 21.2925 61.3263 25.2324 60.1238C26.5672 59.723 27.9019 59.3222 29.2528 58.9855C30.1694 58.745 31.1343 58.7931 32.0188 59.1137C42.2144 62.6089 52.2813 62.2883 62.1874 57.9593C66.2238 56.1797 69.9064 53.6785 73.0262 50.5521C73.187 50.3918 73.2996 50.1513 73.5891 50.1353C73.7338 50.3597 73.6534 50.6002 73.6534 50.8407V60.22C73.6856 65.575 69.3758 69.936 64.0046 69.9841H63.9242C58.1349 70.0161 52.3456 69.9841 46.5563 69.9841H23.3188C22.9971 69.952 22.6755 69.936 22.3539 69.936Z" fill="white"/>
+                    <path d="M24.8622 34.054C27.2905 34.054 29.574 34.0379 31.8415 34.054C33.1119 34.07 33.8034 34.5991 33.9321 35.6092C34.0768 36.8758 33.337 37.7255 31.954 37.7416C29.3489 37.7736 26.7598 37.7576 24.1546 37.7576C23.3988 37.7576 22.659 37.7897 21.9032 37.7416C20.9705 37.6935 20.0538 37.5011 19.6036 36.5391C19.1533 35.5771 19.4749 34.7113 20.086 33.9257C22.5625 30.7832 25.0551 27.6247 27.5478 24.4823C27.6925 24.2899 27.8372 24.0975 27.9819 23.9211C27.8211 23.6486 27.596 23.7768 27.403 23.7608C25.6662 23.7448 23.9134 23.7608 22.1766 23.7448C21.7745 23.7448 21.3725 23.6967 20.9866 23.6165C20.0699 23.4081 19.5071 22.4942 19.7161 21.5963C19.8609 20.9871 20.3433 20.4901 20.9544 20.3458C21.3403 20.2496 21.7424 20.2015 22.1444 20.2015C25.0069 20.1854 27.8855 20.1854 30.7479 20.2015C31.2625 20.1854 31.7611 20.2496 32.2596 20.3778C33.3531 20.7466 33.8195 21.7567 33.3853 22.8149C32.9993 23.7287 32.3882 24.5144 31.7772 25.3C29.6705 27.9775 27.5638 30.6389 25.4572 33.2844C25.2803 33.4928 25.1195 33.7012 24.8622 34.054Z" fill="white"/>
+                    <path d="M43.5171 25.6208C43.903 25.1238 44.3051 24.6588 44.9644 24.5306C46.2348 24.274 47.4249 25.0917 47.4409 26.3744C47.4892 29.581 47.4731 32.7876 47.4409 35.9942C47.4409 36.8279 46.8942 37.5654 46.1062 37.8059C45.3021 38.1105 44.3855 37.87 43.8548 37.1806C43.5814 36.8439 43.4688 36.7798 43.0829 37.0844C41.6195 38.2708 39.9631 38.4793 38.1781 37.9021C35.3156 36.9722 34.1417 34.7436 33.82 32.034C33.4823 29.1 34.4633 26.5988 37.1006 25.0597C39.2877 23.761 41.5069 23.8732 43.5171 25.6208ZM37.8243 31.4729C37.8565 32.1783 38.0816 32.8517 38.4997 33.4128C39.3681 34.5672 41.0245 34.8077 42.1984 33.9419C42.3914 33.7976 42.5683 33.6213 42.7291 33.4128C43.6297 32.1943 43.6297 30.1902 42.7291 28.9717C42.2788 28.3464 41.5712 27.9777 40.8154 27.9616C39.0465 27.8494 37.8082 29.2122 37.8243 31.4729ZM54.6615 31.569C54.5328 27.4486 57.2506 24.3702 61.1101 24.258C65.2108 24.1297 68.202 26.8714 68.3306 30.8796C68.4593 34.936 65.9667 37.8059 62.1232 38.1907C57.926 38.6075 54.5971 35.5773 54.6615 31.569ZM58.6979 31.1843C58.6657 31.9859 58.9069 32.7715 59.3894 33.4289C60.2739 34.5833 61.9302 34.8077 63.0881 33.9099C63.265 33.7816 63.4097 33.6213 63.5545 33.4609C64.4872 32.2424 64.4872 30.1902 63.5705 28.9717C63.1203 28.3625 62.4127 27.9777 61.6569 27.9616C59.9201 27.8654 58.6979 29.1801 58.6979 31.1843ZM53.2463 28.3785C53.2463 30.8636 53.2624 33.3487 53.2463 35.8338C53.2624 36.9722 52.3618 37.9181 51.2201 37.9502C51.0271 37.9502 50.818 37.9341 50.625 37.886C49.821 37.6776 49.2099 36.8279 49.2099 35.8178V23.0716C49.2099 22.318 49.1938 21.5805 49.2099 20.827C49.226 19.5924 50.014 18.7908 51.204 18.7908C52.4262 18.7747 53.2463 19.5764 53.2463 20.859C53.2624 23.3602 53.2463 25.8773 53.2463 28.3785Z" fill="white"/>
+                </svg>
+                <span>Zalo</span>
+            </li>
+        </ul>
+    </div>
+    <footer>
+        <div class="footer">
+            <ul class="footer__top">
+                <li>
+                    <img class="img__logo-footer" src="./assets/img/logo_footer.png" alt="">
+                    <h3 class="title">Kết nối với I Link Group</h3>
+                    <div>
+                        <img src="./assets/img/fb_footer.png" alt="">
+                        <img src="./assets/img/ytb_footer.png" alt="">
+                        <img src="./assets/img/in_footer.png" alt="">
+                    </div>
+                </li>
+                <li>
+                    <h3>Chương trình định cư</h3>
+                    <span>Định cư Canada</span>
+                    <span>Định cư Mĩ</span>
+                    <span>Định cư Úc</span>
+                    <span>Định cư Châu Âu</span>
+                </li>
+                <li>
+                    <h3>Đăng ký nhận bản tin</h3>
+                    <span>Đăng ký để nhận bản tin từ I Link Group</span>
+                    <div>
+                        <input type="text" placeholder="Nhập email của bạn...">
+                        <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+                    </div>
+                </li>
+            </ul>
+            <ul class="footer__bottom">
+                <li class="footer__bottom--item">
+                    <h3>Trụ sở chính</h3>
+                    <div class="address">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <g opacity="0.8">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.59136 0.806936C7.8321 0.619693 8.1692 0.619693 8.40994 0.806936L14.4099 5.4736C14.5723 5.59991 14.6673 5.79411 14.6673 5.99984V13.3332C14.6673 13.8636 14.4566 14.3723 14.0815 14.7474C13.7065 15.1225 13.1978 15.3332 12.6673 15.3332H3.33398C2.80355 15.3332 2.29484 15.1225 1.91977 14.7474C1.5447 14.3723 1.33398 13.8636 1.33398 13.3332V5.99984C1.33398 5.79411 1.42897 5.59991 1.59136 5.4736L7.59136 0.806936ZM2.66732 6.32589V13.3332C2.66732 13.51 2.73756 13.6795 2.86258 13.8046C2.9876 13.9296 3.15717 13.9998 3.33398 13.9998H12.6673C12.8441 13.9998 13.0137 13.9296 13.1387 13.8046C13.2637 13.6795 13.334 13.51 13.334 13.3332V6.32589L8.00065 2.17774L2.66732 6.32589Z" fill="white"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.33398 7.99984C5.33398 7.63165 5.63246 7.33317 6.00065 7.33317H10.0007C10.3688 7.33317 10.6673 7.63165 10.6673 7.99984V14.6665C10.6673 15.0347 10.3688 15.3332 10.0007 15.3332C9.63246 15.3332 9.33398 15.0347 9.33398 14.6665V8.6665H6.66732V14.6665C6.66732 15.0347 6.36884 15.3332 6.00065 15.3332C5.63246 15.3332 5.33398 15.0347 5.33398 14.6665V7.99984Z" fill="white"/>
+                            </g>
+                        </svg>
+                        <span>
+                            168/67 Nguyễn Gia Trí, Phường 25, Bình Thạnh, Thành phố Hồ Chí Minh
+                        </span>
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <g opacity="0.8" clip-path="url(#clip0_2117_224)">
+                              <path d="M13.3324 15.2665C13.2658 15.2665 13.1991 15.2665 13.1324 15.2665C10.9991 14.9998 8.86576 14.2665 7.06575 13.1332C5.39909 12.0665 3.93242 10.5998 2.86576 8.93317C1.66576 7.13317 0.932422 4.99984 0.732422 2.8665C0.732422 2.33317 0.865755 1.79984 1.19909 1.39984C1.53242 0.999837 1.99909 0.733171 2.53242 0.666504C2.59909 0.666504 2.66576 0.666504 2.73242 0.666504H4.73242C5.73242 0.666504 6.59909 1.39984 6.73242 2.39984C6.79909 2.99984 6.93242 3.59984 7.13242 4.13317C7.39909 4.8665 7.19909 5.6665 6.66575 6.2665L6.19909 6.73317C6.99909 7.93317 7.99909 8.99984 9.26575 9.79984L9.73242 9.33317C10.2658 8.79984 11.1324 8.59984 11.8658 8.8665C12.3991 9.0665 12.9991 9.19984 13.5991 9.2665C14.5991 9.39984 15.3324 10.2665 15.3324 11.2665V13.2665C15.3324 13.7998 15.1324 14.3332 14.7324 14.6665C14.3324 14.9998 13.8658 15.2665 13.3324 15.2665ZM4.73242 1.99984H2.73242C2.53242 1.99984 2.33242 2.13317 2.19909 2.2665C2.13242 2.39984 2.06576 2.53317 2.06576 2.73317C2.26576 4.6665 2.93242 6.53317 3.99909 8.19984C4.99909 9.73317 6.26575 11.0665 7.79909 11.9998C9.46575 13.0665 11.3324 13.7332 13.2658 13.9332C13.5324 13.9332 13.6658 13.8665 13.7991 13.7332C13.9324 13.5998 13.9991 13.4665 13.9991 13.2665V11.2665C13.9991 10.9332 13.7324 10.6665 13.3991 10.5998C12.7324 10.5332 12.0658 10.3332 11.3991 10.0665C11.1324 9.99984 10.8658 9.99984 10.6658 10.1998L9.79909 11.0665C9.59909 11.2665 9.26575 11.3332 8.99909 11.1998C7.19909 10.1998 5.73242 8.73317 4.73242 6.93317C4.66576 6.6665 4.73242 6.33317 4.93242 6.13317L5.79909 5.2665C5.93242 5.13317 5.99909 4.79984 5.93242 4.59984C5.66575 3.93317 5.53242 3.2665 5.39909 2.59984C5.39909 2.2665 5.06575 1.99984 4.73242 1.99984Z" fill="white"/>
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_2117_224">
+                                <rect width="16" height="16" fill="white"/>
+                              </clipPath>
+                            </defs>
+                        </svg>
+                        <span>0965 001 161</span>
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <g opacity="0.8">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M2.66602 3.33333C2.30087 3.33333 1.99935 3.63486 1.99935 4V12C1.99935 12.3651 2.30087 12.6667 2.66602 12.6667H13.3327C13.6978 12.6667 13.9993 12.3651 13.9993 12V4C13.9993 3.63486 13.6978 3.33333 13.3327 3.33333H2.66602ZM0.666016 4C0.666016 2.89848 1.56449 2 2.66602 2H13.3327C14.4342 2 15.3327 2.89848 15.3327 4V12C15.3327 13.1015 14.4342 14 13.3327 14H2.66602C1.56449 14 0.666016 13.1015 0.666016 12V4Z" fill="white"/>
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.786585 3.61791C0.997728 3.31628 1.41341 3.24292 1.71505 3.45407L7.99941 7.85312L14.2838 3.45407C14.5854 3.24292 15.0011 3.31628 15.2122 3.61791C15.4234 3.91954 15.35 4.33523 15.0484 4.54637L8.38171 9.21304C8.15217 9.37372 7.84664 9.37372 7.6171 9.21304L0.950431 4.54637C0.648798 4.33523 0.575442 3.91954 0.786585 3.61791Z" fill="white"/>
+                            </g>
+                        </svg>
+                        <span>info@ilinkgroupvina.com</span>
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <g opacity="0.8" clip-path="url(#clip0_2117_155)">
+                              <path d="M0 15.3281C0 12.6094 0 9.89062 0 7.17188C0.140625 6.86719 0.379688 6.76875 0.707813 6.77813C1.26562 6.79688 1.81875 6.78281 2.37656 6.78281C2.4375 6.78281 2.49844 6.78281 2.56406 6.78281C2.56406 6.68437 2.56406 6.61406 2.56406 6.54375C2.56406 4.72969 2.56406 2.91094 2.56406 1.09687C2.56875 0.454687 3.01875 0.0046875 3.66094 0C6.2625 0 8.86406 0 11.4656 0C11.6578 0 11.8125 0.0609375 11.9531 0.201563C13.0406 1.30313 14.1281 2.4 15.2203 3.49687C15.375 3.65156 15.4453 3.825 15.4406 4.04531C15.4359 4.89375 15.4359 5.74219 15.4359 6.59531C15.4359 6.65625 15.4359 6.71719 15.4359 6.7875C16.1109 6.7875 16.7625 6.7875 17.4094 6.7875C17.7844 6.7875 18 6.99844 18 7.37344C18 9.95625 18 12.5391 18 15.1219C18 15.5063 17.7891 15.7125 17.4 15.7172C16.8094 15.7172 16.2188 15.7172 15.6234 15.7172C15.5625 15.7172 15.5016 15.7172 15.4313 15.7172C15.4313 16.1484 15.4359 16.5516 15.4313 16.9547C15.4266 17.325 15.2625 17.625 14.9531 17.8219C14.8313 17.8969 14.6906 17.9391 14.5547 18C10.8516 18 7.14844 18 3.44531 18C2.74688 17.7375 2.56875 17.4703 2.56406 16.7109C2.56406 16.3828 2.56406 16.0594 2.56406 15.7172C2.48906 15.7172 2.43281 15.7172 2.37656 15.7172C1.81875 15.7172 1.26562 15.7031 0.707813 15.7219C0.379688 15.7312 0.140625 15.6328 0 15.3281ZM16.9359 7.85156C11.6344 7.85156 6.35156 7.85156 1.06875 7.85156C1.06875 10.125 1.06875 12.3891 1.06875 14.6484C6.36562 14.6484 11.6484 14.6484 16.9359 14.6484C16.9359 12.3844 16.9359 10.125 16.9359 7.85156ZM14.3719 4.46719C14.2969 4.46719 14.2312 4.46719 14.1703 4.46719C13.3219 4.46719 12.4734 4.46719 11.6203 4.46719C11.2078 4.46719 11.0063 4.26562 11.0063 3.85312C11.0063 2.98594 11.0063 2.11875 11.0063 1.25156C11.0063 1.19063 11.0063 1.12969 11.0063 1.06875C8.53125 1.06875 6.08437 1.06875 3.6375 1.06875C3.6375 2.98125 3.6375 4.87969 3.6375 6.77813C7.22344 6.77813 10.7953 6.77813 14.3719 6.77813C14.3719 6.00938 14.3719 5.25 14.3719 4.46719ZM14.3719 15.7266C10.7812 15.7266 7.20937 15.7266 3.6375 15.7266C3.6375 16.1391 3.6375 16.5375 3.6375 16.9359C7.22344 16.9359 10.7953 16.9359 14.3719 16.9359C14.3719 16.5328 14.3719 16.1391 14.3719 15.7266ZM13.5563 3.40312C13.0594 2.90625 12.5578 2.40469 12.075 1.91719C12.075 2.39062 12.075 2.89687 12.075 3.40312C12.5813 3.40312 13.0828 3.40312 13.5563 3.40312Z" fill="white"/>
+                              <path d="M11.072 13.1766C11.072 13.4625 10.8939 13.6828 10.6548 13.7344C10.4205 13.786 10.1673 13.6594 10.0642 13.425C10.0033 13.2938 9.95641 13.1531 9.90953 13.0125C9.88141 12.9281 9.83922 12.8953 9.74547 12.8953C9.2486 12.9 8.75172 12.9 8.25016 12.8953C8.15641 12.8953 8.11422 12.9281 8.0861 13.0125C8.03922 13.1438 7.99235 13.2797 7.9361 13.4063C7.81422 13.6875 7.52828 13.8094 7.25641 13.7063C6.98922 13.6031 6.85328 13.3125 6.95641 13.0266C7.43922 11.7328 7.93141 10.4438 8.4236 9.1547C8.52203 8.8922 8.74703 8.74689 9.00485 8.75157C9.2861 8.76095 9.48297 8.90157 9.58141 9.16407C10.0642 10.4438 10.547 11.7235 11.0252 13.0078C11.058 13.0781 11.0673 13.1485 11.072 13.1766ZM9.46891 11.8453C9.31422 11.4375 9.16891 11.0531 9.00485 10.6172C8.84078 11.0578 8.69078 11.4469 8.54078 11.8453C8.85016 11.8453 9.14078 11.8453 9.46891 11.8453Z" fill="white"/>
+                              <path d="M13.4945 12.1687C13.1616 12.6327 12.8476 13.078 12.5241 13.5187C12.3929 13.7015 12.2101 13.7812 11.9851 13.739C11.7695 13.6968 11.6335 13.5562 11.5773 13.3499C11.5257 13.1718 11.5866 13.0171 11.6898 12.8718C12.0413 12.3843 12.3882 11.8874 12.7445 11.3999C12.8241 11.2921 12.8288 11.2218 12.7491 11.114C12.3835 10.6171 12.0273 10.1202 11.6757 9.61397C11.446 9.28585 11.5913 8.87335 11.9616 8.77491C12.1726 8.71866 12.3835 8.79835 12.5288 8.99991C12.8148 9.39366 13.096 9.7921 13.3773 10.1858C13.4101 10.2327 13.4476 10.2749 13.4898 10.3358C13.532 10.2796 13.5695 10.2374 13.6023 10.1905C13.8835 9.79678 14.1648 9.39835 14.4507 9.0046C14.6429 8.7421 14.9616 8.68585 15.2054 8.86397C15.4445 9.03741 15.496 9.35147 15.3132 9.61397C14.957 10.1202 14.596 10.6265 14.2304 11.128C14.1601 11.2265 14.1554 11.2874 14.2257 11.3858C14.5866 11.878 14.9335 12.3749 15.2898 12.8718C15.3929 13.0171 15.4538 13.1718 15.407 13.3499C15.3507 13.5608 15.2148 13.7015 15.0038 13.7437C14.7835 13.7905 14.596 13.7108 14.4648 13.528C14.1741 13.1296 13.8929 12.7265 13.607 12.328C13.5788 12.2765 13.546 12.2296 13.4945 12.1687Z" fill="white"/>
+                              <path d="M3.97077 9.81104C3.67546 9.81104 3.40358 9.81104 3.1364 9.81104C2.7989 9.80635 2.55983 9.58135 2.56452 9.27666C2.56921 8.97666 2.80358 8.76104 3.13171 8.75635C4.04108 8.75635 4.94577 8.75635 5.85515 8.75635C6.19265 8.75635 6.43171 8.98135 6.42702 9.28604C6.42233 9.59541 6.18796 9.80635 5.84577 9.80635C5.57858 9.80635 5.3114 9.80635 5.02546 9.80635C5.02546 9.88603 5.02546 9.94697 5.02546 10.0079C5.02546 11.0626 5.02546 12.1173 5.02546 13.172C5.02546 13.5892 4.66452 13.8517 4.30358 13.7063C4.08796 13.622 3.97077 13.4298 3.97077 13.1579C3.97077 12.1079 3.97077 11.0626 3.97077 10.0126C3.97077 9.95635 3.97077 9.89072 3.97077 9.81104Z" fill="white"/>
+                              <path d="M6.61374 3.34229C6.21061 3.34229 5.80749 3.34229 5.40436 3.34229C5.06218 3.34229 4.82311 3.12666 4.81843 2.82197C4.81374 2.50791 5.0528 2.2876 5.40436 2.2876C6.20593 2.2876 7.00749 2.2876 7.80905 2.2876C8.1653 2.2876 8.40436 2.50322 8.40436 2.81729C8.40436 3.13135 8.1653 3.34229 7.80905 3.34229C7.40593 3.34229 7.00749 3.34229 6.61374 3.34229Z" fill="white"/>
+                              <path d="M6.60905 5.59229C6.20593 5.59229 5.8028 5.59229 5.39968 5.59229C5.05749 5.59229 4.81843 5.37666 4.81843 5.07197C4.81374 4.75791 5.05749 4.54229 5.40905 4.5376C6.21061 4.5376 7.01218 4.5376 7.81374 4.5376C8.1653 4.5376 8.40905 4.75322 8.40436 5.06728C8.40436 5.38135 8.1653 5.59229 7.80436 5.59229C7.40593 5.59229 7.00749 5.59229 6.60905 5.59229Z" fill="white"/>
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_2117_155">
+                                <rect width="18" height="18" fill="white"/>
+                              </clipPath>
+                            </defs>
+                        </svg>
+                        <span>3603593394</span>
+                    </div>
+                </li>
+                <li class="footer__bottom--item">
+                    <h3>Chi nhánh Hà Nội</h3>
+                    <div class="address">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <g opacity="0.8">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.59136 0.806936C7.8321 0.619693 8.1692 0.619693 8.40994 0.806936L14.4099 5.4736C14.5723 5.59991 14.6673 5.79411 14.6673 5.99984V13.3332C14.6673 13.8636 14.4566 14.3723 14.0815 14.7474C13.7065 15.1225 13.1978 15.3332 12.6673 15.3332H3.33398C2.80355 15.3332 2.29484 15.1225 1.91977 14.7474C1.5447 14.3723 1.33398 13.8636 1.33398 13.3332V5.99984C1.33398 5.79411 1.42897 5.59991 1.59136 5.4736L7.59136 0.806936ZM2.66732 6.32589V13.3332C2.66732 13.51 2.73756 13.6795 2.86258 13.8046C2.9876 13.9296 3.15717 13.9998 3.33398 13.9998H12.6673C12.8441 13.9998 13.0137 13.9296 13.1387 13.8046C13.2637 13.6795 13.334 13.51 13.334 13.3332V6.32589L8.00065 2.17774L2.66732 6.32589Z" fill="white"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.33398 7.99984C5.33398 7.63165 5.63246 7.33317 6.00065 7.33317H10.0007C10.3688 7.33317 10.6673 7.63165 10.6673 7.99984V14.6665C10.6673 15.0347 10.3688 15.3332 10.0007 15.3332C9.63246 15.3332 9.33398 15.0347 9.33398 14.6665V8.6665H6.66732V14.6665C6.66732 15.0347 6.36884 15.3332 6.00065 15.3332C5.63246 15.3332 5.33398 15.0347 5.33398 14.6665V7.99984Z" fill="white"/>
+                            </g>
+                        </svg>
+                        <span>
+                            168/67 Nguyễn Gia Trí, Phường 25, Bình Thạnh, Thành phố Hồ Chí Minh
+                        </span>
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <g opacity="0.8" clip-path="url(#clip0_2117_224)">
+                              <path d="M13.3324 15.2665C13.2658 15.2665 13.1991 15.2665 13.1324 15.2665C10.9991 14.9998 8.86576 14.2665 7.06575 13.1332C5.39909 12.0665 3.93242 10.5998 2.86576 8.93317C1.66576 7.13317 0.932422 4.99984 0.732422 2.8665C0.732422 2.33317 0.865755 1.79984 1.19909 1.39984C1.53242 0.999837 1.99909 0.733171 2.53242 0.666504C2.59909 0.666504 2.66576 0.666504 2.73242 0.666504H4.73242C5.73242 0.666504 6.59909 1.39984 6.73242 2.39984C6.79909 2.99984 6.93242 3.59984 7.13242 4.13317C7.39909 4.8665 7.19909 5.6665 6.66575 6.2665L6.19909 6.73317C6.99909 7.93317 7.99909 8.99984 9.26575 9.79984L9.73242 9.33317C10.2658 8.79984 11.1324 8.59984 11.8658 8.8665C12.3991 9.0665 12.9991 9.19984 13.5991 9.2665C14.5991 9.39984 15.3324 10.2665 15.3324 11.2665V13.2665C15.3324 13.7998 15.1324 14.3332 14.7324 14.6665C14.3324 14.9998 13.8658 15.2665 13.3324 15.2665ZM4.73242 1.99984H2.73242C2.53242 1.99984 2.33242 2.13317 2.19909 2.2665C2.13242 2.39984 2.06576 2.53317 2.06576 2.73317C2.26576 4.6665 2.93242 6.53317 3.99909 8.19984C4.99909 9.73317 6.26575 11.0665 7.79909 11.9998C9.46575 13.0665 11.3324 13.7332 13.2658 13.9332C13.5324 13.9332 13.6658 13.8665 13.7991 13.7332C13.9324 13.5998 13.9991 13.4665 13.9991 13.2665V11.2665C13.9991 10.9332 13.7324 10.6665 13.3991 10.5998C12.7324 10.5332 12.0658 10.3332 11.3991 10.0665C11.1324 9.99984 10.8658 9.99984 10.6658 10.1998L9.79909 11.0665C9.59909 11.2665 9.26575 11.3332 8.99909 11.1998C7.19909 10.1998 5.73242 8.73317 4.73242 6.93317C4.66576 6.6665 4.73242 6.33317 4.93242 6.13317L5.79909 5.2665C5.93242 5.13317 5.99909 4.79984 5.93242 4.59984C5.66575 3.93317 5.53242 3.2665 5.39909 2.59984C5.39909 2.2665 5.06575 1.99984 4.73242 1.99984Z" fill="white"/>
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_2117_224">
+                                <rect width="16" height="16" fill="white"/>
+                              </clipPath>
+                            </defs>
+                        </svg>
+                        <span>0965 001 161</span>
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <g opacity="0.8">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M2.66602 3.33333C2.30087 3.33333 1.99935 3.63486 1.99935 4V12C1.99935 12.3651 2.30087 12.6667 2.66602 12.6667H13.3327C13.6978 12.6667 13.9993 12.3651 13.9993 12V4C13.9993 3.63486 13.6978 3.33333 13.3327 3.33333H2.66602ZM0.666016 4C0.666016 2.89848 1.56449 2 2.66602 2H13.3327C14.4342 2 15.3327 2.89848 15.3327 4V12C15.3327 13.1015 14.4342 14 13.3327 14H2.66602C1.56449 14 0.666016 13.1015 0.666016 12V4Z" fill="white"/>
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.786585 3.61791C0.997728 3.31628 1.41341 3.24292 1.71505 3.45407L7.99941 7.85312L14.2838 3.45407C14.5854 3.24292 15.0011 3.31628 15.2122 3.61791C15.4234 3.91954 15.35 4.33523 15.0484 4.54637L8.38171 9.21304C8.15217 9.37372 7.84664 9.37372 7.6171 9.21304L0.950431 4.54637C0.648798 4.33523 0.575442 3.91954 0.786585 3.61791Z" fill="white"/>
+                            </g>
+                        </svg>
+                        <span>info@ilinkgroupvina.com</span>
+                    </div>
+                </li>
+                <li class="footer__bottom--item">
+                    <h3>Chi nhánh Đà Nẵng</h3>
+                    <div class="address">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <g opacity="0.8">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.59136 0.806936C7.8321 0.619693 8.1692 0.619693 8.40994 0.806936L14.4099 5.4736C14.5723 5.59991 14.6673 5.79411 14.6673 5.99984V13.3332C14.6673 13.8636 14.4566 14.3723 14.0815 14.7474C13.7065 15.1225 13.1978 15.3332 12.6673 15.3332H3.33398C2.80355 15.3332 2.29484 15.1225 1.91977 14.7474C1.5447 14.3723 1.33398 13.8636 1.33398 13.3332V5.99984C1.33398 5.79411 1.42897 5.59991 1.59136 5.4736L7.59136 0.806936ZM2.66732 6.32589V13.3332C2.66732 13.51 2.73756 13.6795 2.86258 13.8046C2.9876 13.9296 3.15717 13.9998 3.33398 13.9998H12.6673C12.8441 13.9998 13.0137 13.9296 13.1387 13.8046C13.2637 13.6795 13.334 13.51 13.334 13.3332V6.32589L8.00065 2.17774L2.66732 6.32589Z" fill="white"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.33398 7.99984C5.33398 7.63165 5.63246 7.33317 6.00065 7.33317H10.0007C10.3688 7.33317 10.6673 7.63165 10.6673 7.99984V14.6665C10.6673 15.0347 10.3688 15.3332 10.0007 15.3332C9.63246 15.3332 9.33398 15.0347 9.33398 14.6665V8.6665H6.66732V14.6665C6.66732 15.0347 6.36884 15.3332 6.00065 15.3332C5.63246 15.3332 5.33398 15.0347 5.33398 14.6665V7.99984Z" fill="white"/>
+                            </g>
+                        </svg>
+                        <span>
+                            87 Yên Bái, quận Hải Châu, Thành phố Đà Nẵng
+                        </span>
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <g opacity="0.8" clip-path="url(#clip0_2117_224)">
+                              <path d="M13.3324 15.2665C13.2658 15.2665 13.1991 15.2665 13.1324 15.2665C10.9991 14.9998 8.86576 14.2665 7.06575 13.1332C5.39909 12.0665 3.93242 10.5998 2.86576 8.93317C1.66576 7.13317 0.932422 4.99984 0.732422 2.8665C0.732422 2.33317 0.865755 1.79984 1.19909 1.39984C1.53242 0.999837 1.99909 0.733171 2.53242 0.666504C2.59909 0.666504 2.66576 0.666504 2.73242 0.666504H4.73242C5.73242 0.666504 6.59909 1.39984 6.73242 2.39984C6.79909 2.99984 6.93242 3.59984 7.13242 4.13317C7.39909 4.8665 7.19909 5.6665 6.66575 6.2665L6.19909 6.73317C6.99909 7.93317 7.99909 8.99984 9.26575 9.79984L9.73242 9.33317C10.2658 8.79984 11.1324 8.59984 11.8658 8.8665C12.3991 9.0665 12.9991 9.19984 13.5991 9.2665C14.5991 9.39984 15.3324 10.2665 15.3324 11.2665V13.2665C15.3324 13.7998 15.1324 14.3332 14.7324 14.6665C14.3324 14.9998 13.8658 15.2665 13.3324 15.2665ZM4.73242 1.99984H2.73242C2.53242 1.99984 2.33242 2.13317 2.19909 2.2665C2.13242 2.39984 2.06576 2.53317 2.06576 2.73317C2.26576 4.6665 2.93242 6.53317 3.99909 8.19984C4.99909 9.73317 6.26575 11.0665 7.79909 11.9998C9.46575 13.0665 11.3324 13.7332 13.2658 13.9332C13.5324 13.9332 13.6658 13.8665 13.7991 13.7332C13.9324 13.5998 13.9991 13.4665 13.9991 13.2665V11.2665C13.9991 10.9332 13.7324 10.6665 13.3991 10.5998C12.7324 10.5332 12.0658 10.3332 11.3991 10.0665C11.1324 9.99984 10.8658 9.99984 10.6658 10.1998L9.79909 11.0665C9.59909 11.2665 9.26575 11.3332 8.99909 11.1998C7.19909 10.1998 5.73242 8.73317 4.73242 6.93317C4.66576 6.6665 4.73242 6.33317 4.93242 6.13317L5.79909 5.2665C5.93242 5.13317 5.99909 4.79984 5.93242 4.59984C5.66575 3.93317 5.53242 3.2665 5.39909 2.59984C5.39909 2.2665 5.06575 1.99984 4.73242 1.99984Z" fill="white"/>
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_2117_224">
+                                <rect width="16" height="16" fill="white"/>
+                              </clipPath>
+                            </defs>
+                        </svg>
+                        <span>0965 001 161</span>
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <g opacity="0.8">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M2.66602 3.33333C2.30087 3.33333 1.99935 3.63486 1.99935 4V12C1.99935 12.3651 2.30087 12.6667 2.66602 12.6667H13.3327C13.6978 12.6667 13.9993 12.3651 13.9993 12V4C13.9993 3.63486 13.6978 3.33333 13.3327 3.33333H2.66602ZM0.666016 4C0.666016 2.89848 1.56449 2 2.66602 2H13.3327C14.4342 2 15.3327 2.89848 15.3327 4V12C15.3327 13.1015 14.4342 14 13.3327 14H2.66602C1.56449 14 0.666016 13.1015 0.666016 12V4Z" fill="white"/>
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.786585 3.61791C0.997728 3.31628 1.41341 3.24292 1.71505 3.45407L7.99941 7.85312L14.2838 3.45407C14.5854 3.24292 15.0011 3.31628 15.2122 3.61791C15.4234 3.91954 15.35 4.33523 15.0484 4.54637L8.38171 9.21304C8.15217 9.37372 7.84664 9.37372 7.6171 9.21304L0.950431 4.54637C0.648798 4.33523 0.575442 3.91954 0.786585 3.61791Z" fill="white"/>
+                            </g>
+                        </svg>
+                        <span>info@ilinkgroupvina.com</span>
+                    </div>
+                </li>
+                <li class="footer__bottom--item">
+                    <h3>Chi nhánh các nước</h3>
+                    <div class="address">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <g opacity="0.8">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.59136 0.806936C7.8321 0.619693 8.1692 0.619693 8.40994 0.806936L14.4099 5.4736C14.5723 5.59991 14.6673 5.79411 14.6673 5.99984V13.3332C14.6673 13.8636 14.4566 14.3723 14.0815 14.7474C13.7065 15.1225 13.1978 15.3332 12.6673 15.3332H3.33398C2.80355 15.3332 2.29484 15.1225 1.91977 14.7474C1.5447 14.3723 1.33398 13.8636 1.33398 13.3332V5.99984C1.33398 5.79411 1.42897 5.59991 1.59136 5.4736L7.59136 0.806936ZM2.66732 6.32589V13.3332C2.66732 13.51 2.73756 13.6795 2.86258 13.8046C2.9876 13.9296 3.15717 13.9998 3.33398 13.9998H12.6673C12.8441 13.9998 13.0137 13.9296 13.1387 13.8046C13.2637 13.6795 13.334 13.51 13.334 13.3332V6.32589L8.00065 2.17774L2.66732 6.32589Z" fill="white"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.33398 7.99984C5.33398 7.63165 5.63246 7.33317 6.00065 7.33317H10.0007C10.3688 7.33317 10.6673 7.63165 10.6673 7.99984V14.6665C10.6673 15.0347 10.3688 15.3332 10.0007 15.3332C9.63246 15.3332 9.33398 15.0347 9.33398 14.6665V8.6665H6.66732V14.6665C6.66732 15.0347 6.36884 15.3332 6.00065 15.3332C5.63246 15.3332 5.33398 15.0347 5.33398 14.6665V7.99984Z" fill="white"/>
+                            </g>
+                        </svg>
+                        <span>
+                            CN Canada 1: EAST PO Box 651, Yarmouth NS, Canada
+                        </span>
+                    </div>
+                    <div class="address">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <g opacity="0.8">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.59136 0.806936C7.8321 0.619693 8.1692 0.619693 8.40994 0.806936L14.4099 5.4736C14.5723 5.59991 14.6673 5.79411 14.6673 5.99984V13.3332C14.6673 13.8636 14.4566 14.3723 14.0815 14.7474C13.7065 15.1225 13.1978 15.3332 12.6673 15.3332H3.33398C2.80355 15.3332 2.29484 15.1225 1.91977 14.7474C1.5447 14.3723 1.33398 13.8636 1.33398 13.3332V5.99984C1.33398 5.79411 1.42897 5.59991 1.59136 5.4736L7.59136 0.806936ZM2.66732 6.32589V13.3332C2.66732 13.51 2.73756 13.6795 2.86258 13.8046C2.9876 13.9296 3.15717 13.9998 3.33398 13.9998H12.6673C12.8441 13.9998 13.0137 13.9296 13.1387 13.8046C13.2637 13.6795 13.334 13.51 13.334 13.3332V6.32589L8.00065 2.17774L2.66732 6.32589Z" fill="white"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.33398 7.99984C5.33398 7.63165 5.63246 7.33317 6.00065 7.33317H10.0007C10.3688 7.33317 10.6673 7.63165 10.6673 7.99984V14.6665C10.6673 15.0347 10.3688 15.3332 10.0007 15.3332C9.63246 15.3332 9.33398 15.0347 9.33398 14.6665V8.6665H6.66732V14.6665C6.66732 15.0347 6.36884 15.3332 6.00065 15.3332C5.63246 15.3332 5.33398 15.0347 5.33398 14.6665V7.99984Z" fill="white"/>
+                            </g>
+                        </svg>
+                        <span>
+                            CN Canada 2: West Suite 350 14032 23 Ave Edmonton AB, Canada
+                        </span>
+                    </div>
+                    <div class="address">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <g opacity="0.8">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.59136 0.806936C7.8321 0.619693 8.1692 0.619693 8.40994 0.806936L14.4099 5.4736C14.5723 5.59991 14.6673 5.79411 14.6673 5.99984V13.3332C14.6673 13.8636 14.4566 14.3723 14.0815 14.7474C13.7065 15.1225 13.1978 15.3332 12.6673 15.3332H3.33398C2.80355 15.3332 2.29484 15.1225 1.91977 14.7474C1.5447 14.3723 1.33398 13.8636 1.33398 13.3332V5.99984C1.33398 5.79411 1.42897 5.59991 1.59136 5.4736L7.59136 0.806936ZM2.66732 6.32589V13.3332C2.66732 13.51 2.73756 13.6795 2.86258 13.8046C2.9876 13.9296 3.15717 13.9998 3.33398 13.9998H12.6673C12.8441 13.9998 13.0137 13.9296 13.1387 13.8046C13.2637 13.6795 13.334 13.51 13.334 13.3332V6.32589L8.00065 2.17774L2.66732 6.32589Z" fill="white"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.33398 7.99984C5.33398 7.63165 5.63246 7.33317 6.00065 7.33317H10.0007C10.3688 7.33317 10.6673 7.63165 10.6673 7.99984V14.6665C10.6673 15.0347 10.3688 15.3332 10.0007 15.3332C9.63246 15.3332 9.33398 15.0347 9.33398 14.6665V8.6665H6.66732V14.6665C6.66732 15.0347 6.36884 15.3332 6.00065 15.3332C5.63246 15.3332 5.33398 15.0347 5.33398 14.6665V7.99984Z" fill="white"/>
+                            </g>
+                        </svg>
+                        <span>
+                            CN Hàn Quốc: 3rd floor Nonhyun-dong 223-14, Gannam-gu Seoul
+                        </span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- <div class="scroll_to_top" onclick="topFunction()">
+            <ion-icon name="chevron-back-circle-outline"></ion-icon>
+        </div> -->
+        <div class="copyright">
+            <div>
+                <span>© 2022 I LINK GROUP. Đã đăng ký bản quyền. Thiết kế web bởi Thủy Thủ</span>
+                <ul class="copyright__about">
+                    <li>Tin tức</li>
+                    <span></span>
+                    <li>Liên hệ</li>
+                    <span></span>
+                    <li>Hỗ trợ</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="box__contact">
+        <ul class="contact">
+            <li class="contact--item"><ion-icon name="call-sharp"></ion-icon></li>
+            <li class="contact--item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="82" height="82" viewBox="0 0 82 82" fill="none">
+                    <rect x="13" y="13" width="56" height="56" rx="28" fill="#0C265D"/>
+                    <path d="M44.7036 38.7394C44.3996 38.4291 44.0135 38.2729 43.5441 38.2729C42.854 38.2729 42.3504 38.6043 42.0336 39.2661C41.357 38.4712 40.4322 38.0742 39.2599 38.0742C37.8524 38.0742 36.6683 38.6175 35.7093 39.7032C34.7507 40.7891 34.2715 42.1139 34.2715 43.6766C34.2715 45.2392 34.7507 46.5635 35.7093 47.6499C36.6683 48.7361 37.8524 49.2787 39.2599 49.2787C40.4322 49.2787 41.357 48.8817 42.0336 48.0863C42.3504 48.749 42.854 49.0797 43.5441 49.0797C44.0135 49.0797 44.3996 48.9245 44.7036 48.613C45.0069 48.3026 45.1585 47.9216 45.1585 47.4708V39.8819C45.1585 39.4318 45.0069 39.051 44.7036 38.7394ZM41.3401 45.5583C40.9465 46.0654 40.4044 46.3185 39.715 46.3185C39.0245 46.3185 38.4832 46.0654 38.0901 45.5583C37.6972 45.0505 37.5003 44.4236 37.5003 43.6763C37.5003 42.9295 37.6972 42.3024 38.0901 41.7948C38.4832 41.2878 39.0245 41.0343 39.715 41.0343C40.4044 41.0343 40.9465 41.2878 41.3401 41.7948C41.7335 42.3024 41.9301 42.9295 41.9301 43.6763C41.9301 44.4234 41.7335 45.0505 41.3401 45.5583Z" fill="white"/>
+                    <path d="M48.813 48.6129C48.5092 48.9244 48.1225 49.0794 47.6542 49.0794C47.1845 49.0794 46.798 48.9244 46.4946 48.6129C46.1906 48.302 46.0391 47.9207 46.0391 47.4704V33.8897C46.0391 33.4396 46.1906 33.0583 46.4946 32.7473C46.798 32.436 47.1845 32.2808 47.6542 32.2808C48.1225 32.2808 48.5092 32.436 48.813 32.7473C49.1166 33.0583 49.2681 33.4396 49.2681 33.8897V47.4707C49.2681 47.9207 49.1166 48.302 48.813 48.6129Z" fill="white"/>
+                    <path d="M59.5105 39.7032C58.4759 38.6175 57.158 38.0742 55.5568 38.0742C53.956 38.0742 52.6493 38.6107 51.6352 39.6834C50.6203 40.7561 50.1133 42.087 50.1133 43.6763C50.1133 45.2654 50.6203 46.5964 51.6352 47.6693C52.6493 48.742 53.956 49.2787 55.5568 49.2787C57.158 49.2787 58.4759 48.7358 59.5105 47.6499C60.5042 46.59 61.001 45.2657 61.001 43.6766C61.001 42.087 60.5044 40.7629 59.5105 39.7032ZM57.1821 45.5583C56.7886 46.0654 56.2468 46.3185 55.5568 46.3185C54.8665 46.3185 54.3252 46.0654 53.9323 45.5583C53.5388 45.0505 53.3421 44.4236 53.3421 43.6763C53.3421 42.9295 53.5388 42.3024 53.9323 41.7948C54.3252 41.2878 54.8665 41.0343 55.5568 41.0343C56.2468 41.0343 56.7886 41.2878 57.1821 41.7948C57.5755 42.3024 57.7715 42.9295 57.7715 43.6763C57.7715 44.4234 57.5757 45.0505 57.1821 45.5583Z" fill="white"/>
+                    <path d="M32.4833 38.4501C33.6237 36.9784 34.1945 35.9868 34.1945 35.4766C34.1945 34.2961 33.4516 33.7058 31.9655 33.7058H24.1275C23.5117 33.7058 23.0354 33.8514 22.6975 34.1422C22.36 34.4337 22.1909 34.8116 22.1909 35.2769C22.1909 35.743 22.36 36.1213 22.6975 36.4123C23.0354 36.7033 23.5117 36.8487 24.1275 36.8487H29.5106L22.6188 45.7533C22.1685 46.336 21.9434 46.8524 21.9434 47.3036C21.9434 48.5981 22.7993 49.2455 24.5106 49.2455H32.5956C33.8873 49.2455 34.5327 48.7034 34.5327 47.619C34.5327 46.5352 33.8873 45.993 32.5956 45.993H26.6503L32.4833 38.4501Z" fill="white"/>
+                </svg>
+            </li>
+            <li class="contact--item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="82" height="82" viewBox="0 0 82 82" fill="none">
+                    <!-- <rect opacity="0.2" width="82" height="82" rx="41" fill="#0C265D"/> -->
+                    <!-- <rect x="13" y="13" width="56" height="56" rx="28" fill="#0C265D"/> -->
+                    <path d="M41 25C31.988 25 25 31.6038 25 40.5196C25 45.1834 26.912 49.2153 30.024 51.9993C30.284 52.2313 30.444 52.5592 30.452 52.9112L30.54 55.7592C30.5464 55.9687 30.6042 56.1735 30.7083 56.3555C30.8123 56.5374 30.9595 56.6911 31.1369 56.8029C31.3142 56.9146 31.5164 56.9812 31.7254 56.9965C31.9345 57.0119 32.1442 56.9757 32.336 56.8911L35.512 55.4912C35.78 55.3712 36.084 55.3512 36.368 55.4272C37.828 55.8272 39.38 56.0431 41 56.0431C50.012 56.0431 57 49.4393 57 40.5236C57 31.6078 50.012 25 41 25Z" fill="white"/>
+                    <path d="M31.392 45.0594L36.092 37.6037C36.2688 37.3229 36.5019 37.0819 36.7765 36.8959C37.0512 36.7098 37.3614 36.5827 37.6877 36.5225C38.0139 36.4624 38.3491 36.4705 38.6721 36.5465C38.995 36.6224 39.2987 36.7645 39.564 36.9637L43.304 39.7676C43.471 39.8926 43.6741 39.9598 43.8827 39.9591C44.0912 39.9584 44.2939 39.8897 44.46 39.7636L49.508 35.9317C50.18 35.4197 51.06 36.2277 50.612 36.9437L45.908 44.3955C45.7312 44.6762 45.4981 44.9172 45.2235 45.1033C44.9488 45.2893 44.6386 45.4165 44.3123 45.4766C43.986 45.5367 43.6509 45.5286 43.3279 45.4527C43.005 45.3767 42.7013 45.2347 42.436 45.0354L38.696 42.2315C38.529 42.1065 38.3259 42.0393 38.1173 42.04C37.9088 42.0407 37.7061 42.1094 37.54 42.2355L32.492 46.0674C31.82 46.5794 30.94 45.7754 31.392 45.0594Z" fill="#0C265D"/>
+                </svg>
+            </li>
+            <li class="contact--item">
+                <div class="img__message" style="background: url('./assets/img/message.png'); width: 36px; height: 29px;"></div>
+            </li>
+        </ul>
+    </div>
+    <div class="scroll_to_top" onclick="topFunction()">
+        <ion-icon name="chevron-back-circle-outline"></ion-icon>
+    </div>
+    <script>
+        function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+
+        window.addEventListener("scroll", function(){
+            let header = document.querySelector(".header__container")
+            header.classList.toggle("header__container_fixed",window.scrollY > 0)
+            
+            let scrolltoTop = document.querySelector(".scroll_to_top")
+            scrolltoTop.classList.toggle("show",window.scrollY > 500)
+        })
+    </script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

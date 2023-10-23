@@ -6,6 +6,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" 
     integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      />
+
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/fonts/monsterrat/stylesheet.css">
     <title>Về Ilink Group</title>
@@ -17,7 +23,7 @@
             <div class="header__top">
                 <div class="header__top--logo">
                     <a href="./index.html">
-                        <img src="./assets/img/logo.png" alt="">
+                    <img src="./assets/img/logo.png" alt="">
                     </a>
                 </div>
                 <ul class="header__top--right">
@@ -27,16 +33,19 @@
                     </li>
                     <li class="header__right--item">
                         <ion-icon name="mail-outline"></ion-icon>
-                        info@ilinkgroupvina.com
+                        <span>info@ilinkgroupvina.com</span>
                     </li>
                     <li class="header__right--item">
                         <ion-icon name="call-outline"></ion-icon>
-                        +84 965 001 161
+                        <span>+84 965 001 161</span>
                     </li>
                     <li class="header__right--item">
                         <img src="./assets/img/covietnam.png" alt="" style="width: 28px; height: 28px;">
-                        VI
+                        <span>VI</span>
                         <ion-icon name="chevron-down-outline"></ion-icon>
+                    </li>
+                    <li class="header__right--item">
+                        <ion-icon name="reorder-three-outline"></ion-icon>
                     </li>
                 </ul>
             </div>
@@ -196,7 +205,7 @@
                     <span class="cointainer__top--line"></span>
                 </div>
                 <div class="history__box--tree">
-                    <ul>
+                    <ul class="history__box--tree-list">
                         <li>
                             <span>Năm 2006</span>
                             <span></span>
@@ -233,9 +242,6 @@
                     <div class="tree__line"></div>
                 </div>
                 <div class="history__box--container">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="49" height="50" viewBox="0 0 49 50" fill="none">
-                        <path d="M30.625 40.12L15.3125 24.8075L30.625 9.495" stroke="#0C265D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
                     <div class="history__box--container-content">
                         <img src="./assets/img/canada.png" alt="">
                         <div>
@@ -257,13 +263,51 @@
                                 <strong>– Tháng 12:</strong> Ký kết hợp đồng hợp tác khóa giảng dạy chứng chỉ AQF3 Úc 3 bên; giữa trường kỹ thuật ATC-NB Úc và trường trung cấp nghề nấu ăn Cheongju
                             </p>
                         </div>
-                        <div class="line__scroll">
-                            <span></span>
+                    </div>
+                    <div class="history__box--container-content">
+                        <img src="./assets/img/canada.png" alt="">
+                        <div>
+                            <h2>Năm 2008</h2>
+                            <span>Bước phát triển mới</span>
+                            <p>
+                                <strong>– Tháng 3 – tháng 4:</strong> Du nhập AQF Certificate 3 chứng chỉ kỹ thuật Úc lần đầu tiên tại Hàn; và tổ chức hội thảo (Seoul/ Busan)
+
+                                <strong>– Tháng 7:</strong> Tổ chức hội thảo khóa học nấu ăn chứng chỉ kỹ thuật AQF Certificate 3 của Úc và học viện sáng lập dịch vụ ăn uống Hansol
+
+                                <strong>– Tháng 8:</strong> Tổ chức hội thảo khóa học làm bánh chứng chỉ kỹ thuật AQF Certificate 3 của Úc và trường trung cấp nghề làm bánh và khách sạn Daehan
+
+                                <strong>– Tháng 9:</strong> Tổ chức hội thảo khóa học hàn và máy móc gia công kim loại chứng chỉ kỹ thuật AQF Certificate 3 của Úc (Seoul/ Busan) Tổ chức cuộc thi xuất khẩu thợ hàn ngắn hạn lần thứ nhất Thomas & Coffey Úc Ký kết hợp đồng hợp tác khóa giảng dạy chứng chỉ AQF3 Úc 3 bên giữa trường kỹ thuật ATC-NB Úc; học viện sáng lập dịch vụ ăn uống Hansol; trường trung cấp nghề làm bánh và khách sạn Daehan
+
+                                <strong>– Tháng 10:</strong> Tổ chức cuộc thi xuất khẩu thợ hàn ngắn hạn lần thứ hai Thomas & Coffey Úc
+
+                                <strong>– Tháng 11:</strong> Ký kết hợp đồng hợp tác khóa giảng dạy chứng chỉ AQF3 Úc 3 bên; giữa trường kỹ thuật ATC-NB Úc và trường đại học Korea Polytechnics 6 nhánh Pohang. Ký kết hợp đồng hợp tác khóa giảng dạy chứng chỉ AQF3 Úc 3 bên; giữa trường kỹ thuật ATC-NB Úc và trường đại học Korea Polytechnics 2 chi nhánh Incheon. Ký kết hợp đồng hợp tác khóa giảng dạy chứng chỉ AQF3 Úc 3 bên; giữa trường kỹ thuật ATC-NB Úc và trường trung cấp nghề hàn Hàn Quốc
+
+                                <strong>– Tháng 12:</strong> Ký kết hợp đồng hợp tác khóa giảng dạy chứng chỉ AQF3 Úc 3 bên; giữa trường kỹ thuật ATC-NB Úc và trường trung cấp nghề nấu ăn Cheongju
+                            </p>
                         </div>
                     </div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="49" height="50" viewBox="0 0 49 50" fill="none">
-                        <path d="M18.375 9.495L33.6875 24.8075L18.375 40.12" stroke="#0C265D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                    <div class="history__box--container-content">
+                        <img src="./assets/img/canada.png" alt="">
+                        <div>
+                            <h2>Năm 2008</h2>
+                            <span>Bước phát triển mới</span>
+                            <p>
+                                <strong>– Tháng 3 – tháng 4:</strong> Du nhập AQF Certificate 3 chứng chỉ kỹ thuật Úc lần đầu tiên tại Hàn; và tổ chức hội thảo (Seoul/ Busan)
+
+                                <strong>– Tháng 7:</strong> Tổ chức hội thảo khóa học nấu ăn chứng chỉ kỹ thuật AQF Certificate 3 của Úc và học viện sáng lập dịch vụ ăn uống Hansol
+
+                                <strong>– Tháng 8:</strong> Tổ chức hội thảo khóa học làm bánh chứng chỉ kỹ thuật AQF Certificate 3 của Úc và trường trung cấp nghề làm bánh và khách sạn Daehan
+
+                                <strong>– Tháng 9:</strong> Tổ chức hội thảo khóa học hàn và máy móc gia công kim loại chứng chỉ kỹ thuật AQF Certificate 3 của Úc (Seoul/ Busan) Tổ chức cuộc thi xuất khẩu thợ hàn ngắn hạn lần thứ nhất Thomas & Coffey Úc Ký kết hợp đồng hợp tác khóa giảng dạy chứng chỉ AQF3 Úc 3 bên giữa trường kỹ thuật ATC-NB Úc; học viện sáng lập dịch vụ ăn uống Hansol; trường trung cấp nghề làm bánh và khách sạn Daehan
+
+                                <strong>– Tháng 10:</strong> Tổ chức cuộc thi xuất khẩu thợ hàn ngắn hạn lần thứ hai Thomas & Coffey Úc
+
+                                <strong>– Tháng 11:</strong> Ký kết hợp đồng hợp tác khóa giảng dạy chứng chỉ AQF3 Úc 3 bên; giữa trường kỹ thuật ATC-NB Úc và trường đại học Korea Polytechnics 6 nhánh Pohang. Ký kết hợp đồng hợp tác khóa giảng dạy chứng chỉ AQF3 Úc 3 bên; giữa trường kỹ thuật ATC-NB Úc và trường đại học Korea Polytechnics 2 chi nhánh Incheon. Ký kết hợp đồng hợp tác khóa giảng dạy chứng chỉ AQF3 Úc 3 bên; giữa trường kỹ thuật ATC-NB Úc và trường trung cấp nghề hàn Hàn Quốc
+
+                                <strong>– Tháng 12:</strong> Ký kết hợp đồng hợp tác khóa giảng dạy chứng chỉ AQF3 Úc 3 bên; giữa trường kỹ thuật ATC-NB Úc và trường trung cấp nghề nấu ăn Cheongju
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
 
@@ -711,8 +755,37 @@
             let scrolltoTop = document.querySelector(".scroll_to_top")
             scrolltoTop.classList.toggle("show",window.scrollY > 500)
         })
+
     </script>
 </body>
+
+<script
+  type="text/javascript"
+  src="https://code.jquery.com/jquery-1.11.0.min.js"
+></script>
+<script
+  type="text/javascript"
+  src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+></script>
+<script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+></script>
+<script>
+
+    $('.history__box--container').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: false,
+            cssEase: 'linear',
+            prevArrow:`<button type='button' class='slick-button-custom_3 slick-prev pull-left'>
+                <ion-icon name="chevron-back-outline"></ion-icon>
+                </button>`,
+            nextArrow:`<button type='button' class='slick-button-custom_3 slick-next pull-right'>
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button>`,
+        });
+</script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>

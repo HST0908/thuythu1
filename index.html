@@ -36,16 +36,19 @@
                     </li>
                     <li class="header__right--item">
                         <ion-icon name="mail-outline"></ion-icon>
-                        info@ilinkgroupvina.com
+                        <span>info@ilinkgroupvina.com</span>
                     </li>
                     <li class="header__right--item">
                         <ion-icon name="call-outline"></ion-icon>
-                        +84 965 001 161
+                        <span>+84 965 001 161</span>
                     </li>
                     <li class="header__right--item">
                         <img src="./assets/img/covietnam.png" alt="" style="width: 28px; height: 28px;">
-                        VI
+                        <span>VI</span>
                         <ion-icon name="chevron-down-outline"></ion-icon>
+                    </li>
+                    <li class="header__right--item">
+                        <ion-icon name="reorder-three-outline"></ion-icon>
                     </li>
                 </ul>
             </div>
@@ -85,6 +88,8 @@
             <a class="link__header" href="#">Tìm hiểu ngay<ion-icon name="arrow-forward-outline"></ion-icon></a>
         </div>
     </header>
+
+    <div class="over_lay" id="overlay"></div>
 
     <div class="body__content">
 
@@ -634,7 +639,7 @@
                 <div>
                     <div class="conclussion--left-box">
                         <div>
-                            <div class="conclussion--left-box-logo" style="background: url('./assets/img/vientranglogo.png');"></div>
+                            <div class="conclussion--left-box-logo" style="background: url('./assets/img/vientranglogo.png');background-repeat: repeat-y;"></div>
                             <div class="conclussion--left-box-header">Công ty TNHH I Link Group</div>
                             <span class="conclussion--left-box-content">
                                 <strong>Địa chỉ: </strong>168/67 Nguyễn Gia Trí, Phường 25, Bình Thạnh, Thành phố Hồ Chí Minh
@@ -780,21 +785,23 @@
                     </div>
                 </div>
                 <div class="partners_customers__box--content-bottom">
-                    <span>Liên kết nhanh:</span>
+                    <span><strong>Liên kết nhanh:</strong></span>
                     <div class="list__link">
-                        <a href="#">LAS ACADEMY</a>
-                        <a href="#">Xác nhận ngành nghề</a>
-                        <a href="#">Xác nhận tình hình tiến hành hồ sơ</a>
-                    </div>
-                    <div class="nutnhan">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
-                            <path d="M17.0326 21.5325L11 15.4999L17.0326 9.46729" stroke="#0C265D" stroke-linecap="round" stroke-linejoin="round"/>
-                            <circle cx="15.5" cy="15.5" r="15" stroke="#0C265D"/>
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
-                            <path d="M12.9668 9.71875L18.9994 15.5L12.9668 21.2812" stroke="#0C265D" stroke-linecap="round" stroke-linejoin="round"/>
-                            <circle cx="15.5" cy="15.5" r="15" stroke="#0C265D"/>
-                        </svg>
+                        <div class="list__link--item">
+                            <a href="#">LAS ACADEMY</a>
+                        </div>
+                        <div class="list__link--item">
+                            <a href="#">Xác nhận ngành nghề</a>
+                        </div>
+                        <div class="list__link--item">
+                            <a href="#">Xác nhận tình hình tiến hành hồ sơ</a>
+                        </div>
+                        <div class="list__link--item">
+                            <a href="#">LAS ACADEMY</a>
+                        </div>
+                        <div class="list__link--item">
+                            <a href="#">Xác nhận ngành nghề</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1121,7 +1128,33 @@
             slidesToShow: 4,
             infinite: false,
             prevArrow:`<button type='button' class='slick-button-custom slick-prev pull-left'><ion-icon name="chevron-back-outline"></ion-icon></button>`,
-            nextArrow:`<button type='button' class='slick-button-custom slick-next pull-right'><ion-icon name="chevron-forward-outline"></ion-icon></button>`
+            nextArrow:`<button type='button' class='slick-button-custom slick-next pull-right'><ion-icon name="chevron-forward-outline"></ion-icon></button>`,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        arrows: false
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        arrows: false
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        arrows: false
+                    }
+                }
+            ]
         });
         $('.content_recomended-box').slick({
             slidesToShow: 1,
@@ -1131,6 +1164,21 @@
             cssEase: 'linear',
             prevArrow:`<button type='button' class='slick-button-custom_2 slick-prev pull-left'><ion-icon name="chevron-back-outline"></ion-icon></button>`,
             nextArrow:`<button type='button' class='slick-button-custom_2 slick-next pull-right'><ion-icon name="chevron-forward-outline"></ion-icon></button>`,
+            responsive: [
+                
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        arrows: false,
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        arrows: false,
+                    }
+                }
+            ]
 
         });
         $('.counselors__box-list').slick({
@@ -1140,6 +1188,22 @@
             cssEase: 'linear',
             prevArrow:`<button type='button' class='slick-button-custom_3 slick-prev pull-left'><ion-icon name="chevron-back-outline"></ion-icon></button>`,
             nextArrow:`<button type='button' class='slick-button-custom_3 slick-next pull-right'><ion-icon name="chevron-forward-outline"></ion-icon></button>`,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 3,
+                        arrows: false,
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 2,
+                        arrows: false,
+                    }
+                },
+            ]
 
         });
         $('.partners_customers__list').slick({
@@ -1148,7 +1212,29 @@
             cssEase: 'linear',
             arrows: 'false',
             dots: true,
-            autoplay:true
+            autoplay:true,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                },
+            ]
+        });
+        
+        $('.list__link').slick({
+            slidesToShow: 3,
+            infinite: false,
+            cssEase: 'linear',
+            prevArrow:`<button type='button' class='slick-button-custom_4 slick-prev pull-left'><ion-icon name="chevron-back-circle-outline"></ion-icon></button>`,
+            nextArrow:`<button type='button' class='slick-button-custom_4 slick-next pull-right'><ion-icon name="chevron-forward-circle-outline"></ion-icon></button>`,
         });
     });
 </script>

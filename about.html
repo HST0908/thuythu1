@@ -18,7 +18,7 @@
 </head>
 <body>
     <!-- phần đầu trang -->
-    <header style="background: url('./assets/img/topheader2.png'), lightgray -9.153px -85px / 100.749% 184.226% no-repeat;">
+    <header id="header" style="background: url('./assets/img/topheader2.png'), lightgray -9.153px -85px / 100.749% 184.226% no-repeat;">
         <div class="header__container">
             <div class="header__top">
                 <div class="header__top--logo">
@@ -752,21 +752,7 @@
     <div class="scroll_to_top" onclick="topFunction()">
         <ion-icon name="chevron-back-circle-outline"></ion-icon>
     </div>
-    <script>
-        function topFunction() {
-        document.body.scrollTop = 0; // For Safari
-        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-        }
-
-        window.addEventListener("scroll", function(){
-            let header = document.querySelector(".header__container")
-            header.classList.toggle("header__container_fixed",window.scrollY > 0)
-
-            let scrolltoTop = document.querySelector(".scroll_to_top")
-            scrolltoTop.classList.toggle("show",window.scrollY > 500)
-        })
-
-    </script>
+    <script src="./assets/js/main.js"></script>
 </body>
 
 <script
@@ -790,10 +776,10 @@
             cssEase: 'linear',
             prevArrow:`<button type='button' class='slick-button-custom_3 slick-prev pull-left'>
                 <ion-icon name="chevron-back-outline"></ion-icon>
-                </button>`,
+            </button>`,
             nextArrow:`<button type='button' class='slick-button-custom_3 slick-next pull-right'>
                 <ion-icon name="chevron-forward-outline"></ion-icon>
-                </button>`,
+            </button>`,
         });
 
         $('.leadership__box__list').slick({

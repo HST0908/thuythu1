@@ -6,320 +6,281 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" 
     integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-    <!-- Slick -->
+
     <link
         rel="stylesheet"
         type="text/css"
-        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      />
+
+
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/fonts/monsterrat/stylesheet.css">
-    <title>Định cư diện tay nghề</title>
+    <title>Nhà tuyển dụng</title>
 </head>
 <body>
-    <!-- phần đầu trang -->
-    <header id="header" style="background: url('./assets/img/dinhcutaynghe.png'), lightgray -9.153px -85px / 100.749% 184.226% no-repeat;">
-        <div class="header__container">
-            <div class="header__top">
-                <div class="header__top--logo">
-                    <a href="./index.html">
-                    <img src="./assets/img/logo.png" loading="lazy" alt="">
-                    </a>
+        <!-- phần đầu trang -->
+        <header id="header" style="background: url('./assets/img/Rectangle_ntd.png'), lightgray -9.153px -85px / 100.749% 184.226% no-repeat;">
+            <div class="header__container">
+                <div class="header__top">
+                    <div class="header__top--logo">
+                        <a href="./index.html">
+                        <img src="./assets/img/logo.png" loading="lazy" alt="">
+                        </a>
+                    </div>
+                    <ul class="header__top--right">
+                        <li class="header__right--item">
+                            <input type="text" placeholder="Tìm kiếm">
+                            <ion-icon class="search__input" name="search-outline"></ion-icon>
+                        </li>
+                        <li class="header__right--item">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <span>info@ilinkgroupvina.com</span>
+                        </li>
+                        <li class="header__right--item">
+                            <ion-icon name="call-outline"></ion-icon>
+                            <span>+84 965 001 161</span>
+                        </li>
+                        <li class="header__right--item">
+                            <img src="./assets/img/covietnam.png" alt="" style="width: 28px; height: 28px;">
+                            <span>VI</span>
+                            <ion-icon name="chevron-down-outline"></ion-icon>
+                        </li>
+                        <li class="header__right--item">
+                            <ion-icon name="reorder-three-outline"></ion-icon>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="header__top--right">
-                    <li class="header__right--item">
-                        <input type="text" placeholder="Tìm kiếm">
-                        <ion-icon class="search__input" name="search-outline"></ion-icon>
+                <ul class="sub__header__top">
+                    <li class="sub__header--item active" id="gioithieu">Giới thiệu
+                        <div class="dropdown--link">
+                            <div>
+                                <a href="./about.html">Về I LINK</a>
+                                <span></span>
+                                <a href="./danhsachkh.html">Danh sách khách hàng</a>
+                            </div>
+                        </div>
                     </li>
-                    <li class="header__right--item">
-                        <ion-icon name="mail-outline"></ion-icon>
-                        <span>info@ilinkgroupvina.com</span>
+                    <li class="sub__header--item">
+                        <a href="./dinhcucanada.html">Định cư Canada</a>
+                        <div class="dropdown--link">
+                            <div>
+                                <a href="./dinhcutaynghe.html">Định cư diện tay nghề</a>
+                            </div>
+                        </div>
                     </li>
-                    <li class="header__right--item">
-                        <ion-icon name="call-outline"></ion-icon>
-                        <span>+84 965 001 161</span>
+                    <li class="sub__header--item">Định cư Mỹ</li>
+                    <li class="sub__header--item">Định cư Úc</li>
+                    <li class="sub__header--item">Định cư Châu Âu</li>
+                    <li class="sub__header--item"><a href="./nhatuyendung.html">Nhà tuyển dụng</a></li>
+                    <li class="sub__header--item">Tin tức
+                        <div class="dropdown--link">
+                            <div>
+                                <a href="./tintucdinhcu.html">Tin tức định cư</a>
+                                <span></span>
+                                <a href="./about.html">Video clip</a>
+                                <span></span>
+                                <a href="./about.html">Hình ảnh công ty</a>
+                                <span></span>
+                                <a href="./about.html">Lịch hội thảo</a>
+                            </div>
+                        </div>
                     </li>
-                    <li class="header__right--item">
-                        <img src="./assets/img/covietnam.png" alt="" style="width: 28px; height: 28px;">
-                        <span>VI</span>
-                        <ion-icon name="chevron-down-outline"></ion-icon>
-                    </li>
-                    <li class="header__right--item">
-                        <ion-icon name="reorder-three-outline"></ion-icon>
-                    </li>
+                    <li class="sub__header--item">Liên hệ</li>
                 </ul>
             </div>
-            <ul class="sub__header__top">
-                <li class="sub__header--item active" id="gioithieu">Giới thiệu
-                    <div class="dropdown--link">
-                        <div>
-                            <a href="./about.html">Về I LINK</a>
-                            <span></span>
-                            <a href="./danhsachkh.html">Danh sách khách hàng</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="sub__header--item">
-                    <a href="./dinhcucanada.html">Định cư Canada</a>
-                    <div class="dropdown--link">
-                        <div>
-                            <a href="">Định cư diện tay nghề</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="sub__header--item">Định cư Mỹ</li>
-                <li class="sub__header--item">Định cư Úc</li>
-                <li class="sub__header--item">Định cư Châu Âu</li>
-                <li class="sub__header--item">Nhà tuyển dụng</li>
-                <li class="sub__header--item">Tin tức
-                    <div class="dropdown--link">
-                        <div>
-                            <a href="./tintucdinhcu.html">Tin tức định cư</a>
-                            <span></span>
-                            <a href="./about.html">Video clip</a>
-                            <span></span>
-                            <a href="./about.html">Hình ảnh công ty</a>
-                            <span></span>
-                            <a href="./about.html">Lịch hội thảo</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="sub__header--item">Liên hệ</li>
-            </ul>
-        </div>
-        <div class="header__detail">
-            <span>Định cư diện tay nghề</span>
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-                    <path d="M13.062 17.8744V13.7493C13.062 13.567 12.9896 13.3921 12.8606 13.2632C12.7317 13.1342 12.5568 13.0618 12.3745 13.0618H9.6245C9.44216 13.0618 9.26729 13.1342 9.13836 13.2632C9.00943 13.3921 8.937 13.567 8.937 13.7493V17.8744C8.937 18.0567 8.86458 18.2316 8.73566 18.3605C8.60675 18.4894 8.4319 18.5619 8.24958 18.5619L4.12509 18.5624C4.03479 18.5624 3.94539 18.5447 3.86196 18.5101C3.77854 18.4756 3.70274 18.4249 3.63889 18.3611C3.57504 18.2973 3.5244 18.2215 3.48984 18.138C3.45529 18.0546 3.4375 17.9652 3.4375 17.8749V9.92911C3.4375 9.83333 3.45751 9.7386 3.49626 9.65101C3.535 9.56341 3.59163 9.48488 3.66249 9.42044L10.537 3.1698C10.6636 3.05473 10.8285 2.99097 10.9995 2.99097C11.1705 2.99096 11.3354 3.05471 11.462 3.16977L18.3375 9.42044C18.4084 9.48488 18.465 9.56341 18.5037 9.65101C18.5425 9.73862 18.5625 9.83335 18.5625 9.92914V17.8749C18.5625 17.9652 18.5447 18.0546 18.5102 18.138C18.4756 18.2215 18.425 18.2973 18.3611 18.3611C18.2973 18.4249 18.2215 18.4756 18.138 18.5101C18.0546 18.5447 17.9652 18.5624 17.8749 18.5624L13.7494 18.5619C13.5671 18.5619 13.3922 18.4894 13.2633 18.3605C13.1344 18.2316 13.062 18.0567 13.062 17.8744V17.8744Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                    <path d="M6 3L11 8L6 13" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <span>Định cư diện tay nghề</span>
+            <div class="header__detail">
+                <span>Nhà tuyển dụng</span>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                        <path d="M13.062 17.8744V13.7493C13.062 13.567 12.9896 13.3921 12.8606 13.2632C12.7317 13.1342 12.5568 13.0618 12.3745 13.0618H9.6245C9.44216 13.0618 9.26729 13.1342 9.13836 13.2632C9.00943 13.3921 8.937 13.567 8.937 13.7493V17.8744C8.937 18.0567 8.86458 18.2316 8.73566 18.3605C8.60675 18.4894 8.4319 18.5619 8.24958 18.5619L4.12509 18.5624C4.03479 18.5624 3.94539 18.5447 3.86196 18.5101C3.77854 18.4756 3.70274 18.4249 3.63889 18.3611C3.57504 18.2973 3.5244 18.2215 3.48984 18.138C3.45529 18.0546 3.4375 17.9652 3.4375 17.8749V9.92911C3.4375 9.83333 3.45751 9.7386 3.49626 9.65101C3.535 9.56341 3.59163 9.48488 3.66249 9.42044L10.537 3.1698C10.6636 3.05473 10.8285 2.99097 10.9995 2.99097C11.1705 2.99096 11.3354 3.05471 11.462 3.16977L18.3375 9.42044C18.4084 9.48488 18.465 9.56341 18.5037 9.65101C18.5425 9.73862 18.5625 9.83335 18.5625 9.92914V17.8749C18.5625 17.9652 18.5447 18.0546 18.5102 18.138C18.4756 18.2215 18.425 18.2973 18.3611 18.3611C18.2973 18.4249 18.2215 18.4756 18.138 18.5101C18.0546 18.5447 17.9652 18.5624 17.8749 18.5624L13.7494 18.5619C13.5671 18.5619 13.3922 18.4894 13.2633 18.3605C13.1344 18.2316 13.062 18.0567 13.062 17.8744V17.8744Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M6 3L11 8L6 13" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>Nhà tuyển dụng</span>
+                </div>
             </div>
-        </div>
-    </header>
-    <section class="settle_sec_1">
-        <div class="box__layout">
-            <div class="box__layout--left box__layout-col_5 box__layout-col_full">
-                <div class="box__layout-content">
-                    <div class="content_wrapper">
-                        <h2>Định cư Canada diện tay nghề là gì?</h2>
-                        <div class="left-content-text">
-                            <div class="content_wrapper">
-                                <p>Định cư Canada diện tay nghề (Skilled Worker Immigration) là diện định cư dành cho người nhập cư có kinh nghiệm, 
-                                    kỹ năng làm việc ở ngành nghề được chính phủ Canada chào đón và cấp thường trú nhân (PR).</p>
-                                <p>Điều đó nghĩa là bạn sẽ tìm kiếm cơ hội định cư Canada thông qua một công việc hợp pháp dựa trên bằng cấp, kĩ năng, kinh nghiệm của bản thân.</p>
+        </header>
+        <section>
+            <div class="ntd_top">
+                <div class="cointainer__top">
+                    <h2>Thông tin nhà tuyển dụng</h2>
+                    <span class="cointainer__top--line"></span>
+                </div>
+                <div class="menu_list">
+                    <ul class="list__category">
+                        <li class="category--item active">Định cư Canada</li>
+                        <li class="category--item">Định cư Mỹ</li>
+                        <li class="category--item">Định cư Úc</li>
+                        <li class="category--item">Định cư Châu Âu</li>
+                    </ul>
+                </div>
+                <div class="ntd__box_content">
+                    <ul class="ntd__box_list">
+                        <li class="ntd__box_list--item">
+                            <div class="img_wrapper">
+                                <img src="./assets/img/anhlist1.png" alt="">
                             </div>
-                        </div>
-                        <div class="left-content-lienhe">
-                            <a href="#">
-                                Liên hệ để được tư vấn
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <path d="M3.75 11.7241H20.25" stroke="#0C265D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M13.5 5.12927L20.25 11.7241L13.5 18.3189" stroke="#0C265D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </a>
-                        </div>
+                            <div class="content_wrapper2">
+                                <h3><a href="./detailnhatuyendung.html">Đào tạo tiếng Anh</a></h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                </p>
+                            </div>
+                        </li>
+                        <li class="ntd__box_list--item">
+                            <div class="img_wrapper">
+                                <img src="./assets/img/anhlist1.png" alt="">
+                            </div>
+                            <div class="content_wrapper2">
+                                <h3><a href="./detailnhatuyendung.html">Đào tạo tiếng Anh</a></h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                </p>
+                            </div>
+                        </li>
+                        <li class="ntd__box_list--item">
+                            <div class="img_wrapper">
+                                <img src="./assets/img/anhlist1.png" alt="">
+                            </div>
+                            <div class="content_wrapper2">
+                                <h3><a href="./detailnhatuyendung.html">Đào tạo tiếng Anh</a></h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                </p>
+                            </div>
+                        </li>
+                        <li class="ntd__box_list--item">
+                            <div class="img_wrapper">
+                                <img src="./assets/img/anhlist1.png" alt="">
+                            </div>
+                            <div class="content_wrapper2">
+                                <h3><a href="./detailnhatuyendung.html">Đào tạo tiếng Anh</a></h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                </p>
+                            </div>
+                        </li>
+                        <li class="ntd__box_list--item">
+                            <div class="img_wrapper">
+                                <img src="./assets/img/anhlist1.png" alt="">
+                            </div>
+                            <div class="content_wrapper2">
+                                <h3><a href="./detailnhatuyendung.html">Đào tạo tiếng Anh</a></h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                </p>
+                            </div>
+                        </li>
+                        <li class="ntd__box_list--item">
+                            <div class="img_wrapper">
+                                <img src="./assets/img/anhlist1.png" alt="">
+                            </div>
+                            <div class="content_wrapper2">
+                                <h3><a href="./detailnhatuyendung.html">Đào tạo tiếng Anh</a></h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                </p>
+                            </div>
+                        </li>
+                        <li class="ntd__box_list--item">
+                            <div class="img_wrapper">
+                                <img src="./assets/img/anhlist1.png" alt="">
+                            </div>
+                            <div class="content_wrapper2">
+                                <h3><a href="./detailnhatuyendung.html">Đào tạo tiếng Anh</a></h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                </p>
+                            </div>
+                        </li>
+                        <li class="ntd__box_list--item">
+                            <div class="img_wrapper">
+                                <img src="./assets/img/anhlist1.png" alt="">
+                            </div>
+                            <div class="content_wrapper2">
+                                <h3><a href="./detailnhatuyendung.html">Đào tạo tiếng Anh</a></h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                </p>
+                            </div>
+                        </li>
+                        <li class="ntd__box_list--item">
+                            <div class="img_wrapper">
+                                <img src="./assets/img/anhlist1.png" alt="">
+                            </div>
+                            <div class="content_wrapper2">
+                                <h3><a href="./detailnhatuyendung.html">Đào tạo tiếng Anh</a></h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                </p>
+                            </div>
+                        </li>
+                        <li class="ntd__box_list--item">
+                            <div class="img_wrapper">
+                                <img src="./assets/img/anhlist1.png" alt="">
+                            </div>
+                            <div class="content_wrapper2">
+                                <h3><a href="./detailnhatuyendung.html">Đào tạo tiếng Anh</a></h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                </p>
+                            </div>
+                        </li>
+                        <li class="ntd__box_list--item">
+                            <div class="img_wrapper">
+                                <img src="./assets/img/anhlist1.png" alt="">
+                            </div>
+                            <div class="content_wrapper2">
+                                <h3><a href="./detailnhatuyendung.html">Đào tạo tiếng Anh</a></h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                </p>
+                            </div>
+                        </li>
+                        <li class="ntd__box_list--item">
+                            <div class="img_wrapper">
+                                <img src="./assets/img/anhlist1.png" alt="">
+                            </div>
+                            <div class="content_wrapper2">
+                                <h3><a href="./detailnhatuyendung.html">Đào tạo tiếng Anh</a></h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                </p>
+                            </div>
+                        </li>
+                        <li class="ntd__box_list--item">
+                            <div class="img_wrapper">
+                                <img src="./assets/img/anhlist1.png" alt="">
+                            </div>
+                            <div class="content_wrapper2">
+                                <h3><a href="./detailnhatuyendung.html">Đào tạo tiếng Anh</a></h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="xemthem-center">
+                        <span>Xem thêm</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M16.25 7.5L10 13.75L3.75 7.5" stroke="#272D35" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
                     </div>
                 </div>
             </div>
-            <div class="box__layout--right box__layout-col_7 box__layout-col_full">
-                <div class="box__layout-content">
-                    <div class="content_wrapper">
-                        <figure>
-                            <div class="img-content_wrapper">
-                                <img src="./assets/img/Component_2.png" loading="lazy" alt="">
-                            </div>
-                        </figure>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section class="section-nopadding">
-        <div class="box__layout-noflex">
-            <div class="content_wrapper">
-                <div class="cointainer__top cointainer__top-about">
-                    <h2>Tại sao nên chọn định cư Canada theo diện tay nghề?</h2>
-                    <span class="cointainer__top--line leadership__box--line"></span>
-                    <p>
-                        Đây là diện định cư phổ biến và đa dạng nhất nên bạn sẽ dễ dàng chọn được chương trình định cư phù hợp nhất với bản thân.
-                    </p>
-                </div>
-            </div>
+        </section>
 
-            <div class="box__content-flex_3item">
-                <div class="col col-md">
-                    <div class="colum-inner">
-                        <div class="content_wrapper">
-                            <h3>450000</h3>
-                            <h4>người nhập mỗi năm</h4>
-                            <p>Người nhập mỗi năm và 70% số lượng người nhập cư từ các chương trình định cư Canada diện tay nghề</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-md">
-                    <div class="colum-inner">
-                        <div class="content_wrapper">
-                            <h3>100</h3>
-                            <h4>Số lượng nhóm ngành</h4>
-                            <p>Canada có hơn 100 chương trình, 70% số đó là các chương trình tay nghề</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-md">
-                    <div class="colum-inner">
-                        <div class="content_wrapper">
-                            <h3>1000 +</h3>
-                            <h4>Nhân sự thiếu</h4>
-                            <p>Canada đang rất thiếu nhân sự ở rất nhiều nhóm ngành.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section>
-        <div class="cointainer__top cointainer__top-about">
-            <h2>Chương trình định cư Canada diện tay nghề</h2>
-            <span class="cointainer__top--line leadership__box--line"></span>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt dui ligula, mollis sagittis ligula suscipit id. Aliquam lacinia a velit eu fermentum.
-            </p>
-        </div>
-        <div class="row__container column__container-top-bg_img">
-            <div class="column__container">
-                <div class="column__container--inner column__container--inner-top">
-                    <div class="content_wrapper">
-                        <h3>Định cư Canada AIP</h3>
-                        <p>
-                            Là chương trình dành cho người lao động các nước muốn sang sinh sống, 
-                            làm việc và định cư tại Canada thông qua lời mời làm việc hợp pháp tại các doanh nghiệp ở đây.
-                        </p>
-                        <div class="link-xemthem">
-                            <a href="./canadaaip.html">
-                                Chi tiết
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                                    <path d="M3.75 12.4827H20.25" stroke="#0C265D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M13.5 5.88782L20.25 12.4826L13.5 19.0775" stroke="#0C265D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row__container column__container-bottom-bg_img">
-            <div class="column__container">
-                <div class="column__container--inner column__container--inner-bottom">
-                    <div class="content_wrapper">
-                        <h3>Định cư Canada AINP</h3>
-                        <p>
-                            Là chương trình dành cho người lao động các nước muốn sang sinh sống, 
-                            làm việc và định cư tại Canada thông qua lời mời làm việc hợp pháp tại các doanh nghiệp ở đây.
-                        </p>
-                        <div class="link-xemthem">
-                            <a href="./canadaainp.html">
-                                Chi tiết
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                                    <path d="M3.75 12.4827H20.25" stroke="#0C265D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M13.5 5.88782L20.25 12.4826L13.5 19.0775" stroke="#0C265D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section>
-        <div class="cointainer__top cointainer__top-about">
-            <h2>Tại sao nên chọn I Link đồng hành cùng<br>
-                giấc mơ định cư Canada của bạn?</h2>
-            <span class="cointainer__top--line leadership__box--line"></span>
-            <p>
-                Đây là diện định cư phổ biến và đa dạng nhất nên bạn sẽ dễ dàng chọn được chương trình định cư phù hợp nhất với bản thân.
-            </p>
-        </div>
-        <div class="row__container">
-            <div class="content_wrapper">
-                <div class="content_wrapper--inner">
-                    <div>
-                        <div class="content_wrapper--item">
-                            <div class="content_wrapper--item-inner">
-                                <div class="content_wrapper">
-                                    <div class="box_content--container">
-                                        <div class="box_content--item-img">
-                                            <img src="./assets/img/Frame_3.png" loading="lazy" alt="">
-                                        </div>
-                                        <div class="box_content--item-desc">
-                                            <h3>Đúng chuyên môn</h3>
-                                            <p>Bạn được làm việc đúng chuyên môn và kinh nghiệm bản thân</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="content_wrapper--item">
-                            <div class="content_wrapper--item-inner">
-                                <div class="content_wrapper">
-                                    <div class="box_content--container">
-                                        <div class="box_content--item-img">
-                                            <img src="./assets/img/Frame_2.png" loading="lazy" alt="">
-                                        </div>
-                                        <div class="box_content--item-desc">
-                                            <h3>15 năm</h3>
-                                            <p>Kinh nghiệm và đội ngũ luật sư có giấy phép ICCRC tại Canada</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="content_wrapper--item">
-                            <div class="content_wrapper--item-inner">
-                                <div class="content_wrapper">
-                                    <div class="box_content--container">
-                                        <div class="box_content--item-img">
-                                            <img src="./assets/img/Frame_1.png" loading="lazy" alt="">
-                                        </div>
-                                        <div class="box_content--item-desc">
-                                            <h3>100%</h3>
-                                            <p>Công việc sẵn có tại Canada, nhà tuyển dụng hợp pháp 100%</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="content_wrapper--item">
-                            <div class="content_wrapper--item-inner">
-                                <div class="content_wrapper">
-                                    <div class="box_content--container">
-                                        <div class="box_content--item-img">
-                                            <img src="./assets/img/Frame_4.png" loading="lazy" alt="">
-                                        </div>
-                                        <div class="box_content--item-desc">
-                                            <h3>LMIA có sẵn</h3>
-                                            <p>Bạn được làm việc đúng chuyên môn và kinh nghiệm bản thân</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section>
-        
-    </section>
+
+
+
+
+
 
     <footer>
         <div class="footer">
@@ -558,20 +519,6 @@
     <div class="scroll_to_top" onclick="topFunction()">
         <ion-icon name="chevron-back-circle-outline"></ion-icon>
     </div>
-    <script>
-        function topFunction() {
-        document.body.scrollTop = 0; // For Safari
-        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-        }
-
-        window.addEventListener("scroll", function(){
-            let header = document.querySelector(".header__container")
-            header.classList.toggle("header__container_fixed",window.scrollY > 0)
-
-            let scrolltoTop = document.querySelector(".scroll_to_top")
-            scrolltoTop.classList.toggle("show",window.scrollY > 500)
-        })
-    </script>
     <script src="./assets/js/main.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

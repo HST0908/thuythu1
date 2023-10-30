@@ -165,7 +165,7 @@ body {
     transform: translateX(100%);
     position: fixed;
     background: var(--text-primary);
-    top: 72px;
+    top: 70px;
     right: 0;
     width: 50vw;
     bottom: 0;
@@ -5263,6 +5263,10 @@ section.no-pd-bottom {
 }
  
 @media (max-width: 420px) {
+
+    .header__mobile {
+        width: 100vw;
+    }
 
     .conclussion_box--left-content {
         padding: 39.875rem 3.75rem 3.875rem calc(calc(100vw - 34.5rem) / 2);

@@ -13,3 +13,20 @@ window.addEventListener("scroll", function(){
     let scrolltoTop = document.querySelector(".scroll_to_top")
     scrolltoTop.classList.toggle("show",window.scrollY > 500)
 })
+
+let btn_menu = document.querySelector('.btn__menu_mobile')
+let active_menu = document.querySelector('.header__mobile ')
+
+btn_menu.onclick = function() {
+    btn_menu.classList.toggle('show')
+    active_menu.classList.toggle('show')
+}
+
+let list_menu = document.querySelectorAll('.btn_dropdown-mobile')
+let drop = document.querySelectorAll('.dropdown_menu--mobile')
+
+list_menu.forEach(item => {
+    item.onclick = function(){
+        this.classList.toggle('active')
+    }
+});

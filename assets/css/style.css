@@ -570,6 +570,7 @@ button.slick-button-custom.slick-prev.pull-left.slick-arrow {
 .content_recomended-box {
     display: flex;
     position: relative;
+    min-height: 1px;
 }
 
 button.slick-button-custom_2.slick-prev.pull-left.slick-arrow {

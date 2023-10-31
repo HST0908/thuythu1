@@ -4157,6 +4157,20 @@ ul.ntd__box_list {
 
 .content_wrapper2 {
     font-family: 'Montserrat';
+    padding:0 10px 10px;
+}
+
+.content_wrapper2 >p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    display:-webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+    margin: 0;
+    line-height: 20px;
 }
 
 .content_wrapper2.tintuc {

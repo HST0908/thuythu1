@@ -2574,6 +2574,7 @@ ul.detail {
     margin: auto;
     padding: 0;
     gap: 30px;
+    align-items: center;
 }
 
 .vision__box > ul > li {
@@ -2593,9 +2594,14 @@ ul.detail {
 
 .vision__box > ul > li > div {
     position: absolute;
-    bottom: 37px;
+    bottom: -65px;
     color: #FFF;
     left: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.vision__box > ul > li:hover > div {
+    bottom: 20px;
 }
 
 .vision__box > ul > li > div > span {
@@ -2604,10 +2610,11 @@ ul.detail {
     font-weight: 600;
     line-height: 45px;
     padding-left: 17px;
-    border-left: 2px solid var(--text-hover);
+    border-left: 3px solid var(--text-hover);
 }
 
 .vision__box > ul > li > div > ul {
+    margin-top: 20px;
     font-size: 1.4rem;
     line-height: 22px;
 }

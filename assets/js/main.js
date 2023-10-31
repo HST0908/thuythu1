@@ -30,3 +30,30 @@ list_menu.forEach(item => {
         this.classList.toggle('active')
     }
 });
+
+// Modal Video
+
+let videos = document.querySelectorAll('.list__video--item'),
+modalvideo = document.querySelector('.popupvideo'),
+iframemodalvideo = document.querySelector('.popupvideo .popupvideo__inner .popupvideo__inner-iframe iframe'),
+btnclose = document.querySelector('.popupvideo .popupvideo__inner-close')
+videos.forEach((item) => {
+    item.addEventListener('click', function() {
+        modalvideo.classList.add('active')
+        let dataId = item.getAttribute('data-video')
+        iframemodalvideo.setAttribute('src',`https://www.youtube.com/embed/${dataId}?autoplay=1`)
+    })
+})
+
+function closeModal() {
+    modalvideo.classList.remove('active')
+    iframemodalvideo.setAttribute('src','')
+}
+
+btnclose.addEventListener('click', function(){
+    closeModal()
+})
+
+modalvideo.addEventListener('click',function() {
+    closeModal()
+})

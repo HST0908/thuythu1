@@ -560,7 +560,7 @@
                     </div>
                     <div class="body__box">
                         <ul class="list__video">
-                            <li class="list__video--item">
+                            <li class="list__video--item" data-video="AWDFL3cRoNc?si=n5BTrJKuEqRJN1jF">
                                 <div>
                                     <img src="./assets/img/videoclip1.png" loading="lazy" alt="">
                                     <button style="background: rgba(255, 255, 255, 0.40);">
@@ -572,7 +572,7 @@
                                     <span>08, tháng 08, 2022</span>
                                 </div>
                             </li>
-                            <li class="list__video--item">
+                            <li class="list__video--item" data-video="OqMpX0iw1mY?si=aJUtKqNH6P4SkWU_">
                                 <div>
                                     <img src="./assets/img/videoclip1.png" loading="lazy" alt="">
                                     <button style="background: rgba(255, 255, 255, 0.40);">
@@ -584,7 +584,7 @@
                                     <span>08, tháng 08, 2022</span>
                                 </div>
                             </li>
-                            <li class="list__video--item">
+                            <li class="list__video--item" data-video="OqMpX0iw1mY?si=aJUtKqNH6P4SkWU_">
                                 <div>
                                     <img src="./assets/img/videoclip1.png" loading="lazy" alt="">
                                     <button style="background: rgba(255, 255, 255, 0.40);">
@@ -596,7 +596,7 @@
                                     <span>08, tháng 08, 2022</span>
                                 </div>
                             </li>
-                            <li class="list__video--item">
+                            <li class="list__video--item" data-video="OqMpX0iw1mY?si=aJUtKqNH6P4SkWU_">
                                 <div>
                                     <img src="./assets/img/videoclip1.png" loading="lazy" alt="">
                                     <button style="background: rgba(255, 255, 255, 0.40);">
@@ -625,7 +625,7 @@
                         </div>
                     </div>
                     <ul class="body__box list__video">
-                        <li class="list__video--item">
+                        <li class="list__video--item" data-video="OqMpX0iw1mY?si=aJUtKqNH6P4SkWU_">
                             <div>
                                 <img src="./assets/img/videoclip1.png" loading="lazy" alt="">
                                 <button style="background: rgba(255, 255, 255, 0.40);">
@@ -637,7 +637,7 @@
                                 <span>08, tháng 08, 2022</span>
                             </div>
                         </li>
-                        <li class="list__video--item">
+                        <li class="list__video--item" data-video="kIl99wWgfho?si=D6hJzI-X6oII9Opq">
                             <div>
                                 <img src="./assets/img/videoclip1.png" loading="lazy" alt="">
                                 <button style="background: rgba(255, 255, 255, 0.40);">
@@ -649,7 +649,7 @@
                                 <span>08, tháng 08, 2022</span>
                             </div>
                         </li>
-                        <li class="list__video--item">
+                        <li class="list__video--item" data-video="JHcXofxF3S8?si=HVq_wFFdTfHtF0fQ">
                             <div>
                                 <img src="./assets/img/videoclip1.png" loading="lazy" alt="">
                                 <button style="background: rgba(255, 255, 255, 0.40);">
@@ -661,7 +661,7 @@
                                 <span>08, tháng 08, 2022</span>
                             </div>
                         </li>
-                        <li class="list__video--item">
+                        <li class="list__video--item" data-video="OqMpX0iw1mY?si=aJUtKqNH6P4SkWU_">
                             <div>
                                 <img src="./assets/img/videoclip1.png" loading="lazy" alt="">
                                 <button style="background: rgba(255, 255, 255, 0.40);">
@@ -1256,6 +1256,23 @@
             </div>
         </div>
     </footer>
+
+    <div class="popupvideo">
+        <div class="popupvideo__inner">
+            <div class="popupvideo__inner-iframe">
+                <iframe width="100%" height="100%"
+                 src="" 
+                 title="YouTube video player" frameborder="0" 
+                 allow="accelerometer; autoplay; clipboard-write; 
+                 encrypted-media; gyroscope; picture-in-picture; web-share"
+                 allowfullscreen>
+                </iframe>
+                <div class="popupvideo__inner-close">
+                    <ion-icon name="close"></ion-icon>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="box__contact">
         <ul class="contact">
             <li class="contact--item"><ion-icon name="call-sharp"></ion-icon></li>
@@ -1284,7 +1301,7 @@
     <div class="scroll_to_top" onclick="topFunction()">
         <ion-icon name="chevron-back-circle-outline"></ion-icon>
     </div>
-    <script src="./assets/js/main.js"></script>
+<script src="./assets/js/main.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
@@ -1502,12 +1519,14 @@
                     breakpoint: 768,
                     settings: {
                         slidesToShow: 3,
+                        arrows: 'false',
                     }
                 },
                 {
                     breakpoint: 480,
                     settings: {
                         slidesToShow: 2,
+                        arrows: 'false',
                     }
                 },
             ]
@@ -1519,6 +1538,22 @@
             cssEase: 'linear',
             prevArrow:`<button type='button' class='slick-button-custom_4 slick-prev pull-left'><ion-icon name="chevron-back-circle-outline"></ion-icon></button>`,
             nextArrow:`<button type='button' class='slick-button-custom_4 slick-next pull-right'><ion-icon name="chevron-forward-circle-outline"></ion-icon></button>`,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 3,
+                        // arrows: 'false',
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 2,
+                        arrows: false,
+                    }
+                },
+            ]
         });
     });
 </script>

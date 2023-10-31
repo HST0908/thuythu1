@@ -751,6 +751,30 @@ function getDirection() {
 
     return direction;
 }
+
+
+let popupnew_item = document.querySelectorAll('#popup-item')
+let popupnew = document.querySelector('.poup__wrap')
+let btnclosepopup = document.querySelector('.btn__close')
+let bg__close = document.querySelector('.bg__close')
+
+popupnew_item.forEach((list) => {
+    list.addEventListener('click',function() {
+        popupnew.classList.add('active')
+    })
+})
+
+btnclosepopup.addEventListener('click', () => {
+    closepopup()
+})
+
+bg__close.addEventListener('click', ()=> {
+    closepopup()
+})
+
+function closepopup(){
+    popupnew.classList.remove('active')
+}
 </script>
 </body>
 </html>

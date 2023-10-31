@@ -3359,9 +3359,9 @@ li.bottom_list--item:hover > .absolute {
 .popup__customer--right-hidden > p {
     color: var(--text-color);
     font-family: Montserrat;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 22px;
 }
 

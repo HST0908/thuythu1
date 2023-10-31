@@ -43,7 +43,7 @@ videos.forEach((item) => {
         let dataId = item.getAttribute('data-video')
         iframemodalvideo.setAttribute('src',`https://www.youtube.com/embed/${dataId}?autoplay=1`)
     })
-})
+});
 
 function closeModal() {
     modalvideo.classList.remove('active')
@@ -56,4 +56,4 @@ btnclose.addEventListener('click', function(){
 
 modalvideo.addEventListener('click',function() {
     closeModal()
-})
+});

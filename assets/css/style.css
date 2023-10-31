@@ -1521,6 +1521,17 @@ div:nth-child(1) img {
     transition: all 0.4s linear;
 }
 
+.right_content-wrapper::before {
+    content: '';
+    background: url(../img/logo_pattern.png);
+    width: 60.875rem;
+    height: 58.9375rem;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: -195px;
+}
+
 .btn {
     width: 142px;
     height: 38px;

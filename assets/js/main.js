@@ -9,6 +9,7 @@ window.addEventListener("scroll", function(){
     
     main_header.classList.toggle("before_h",window.scrollY > 0)
     header.classList.toggle("header__container_fixed",window.scrollY > 0)
+    $('.box__header').toggleClass('box__header-fixed',window.scrollY > 0);
 
     let scrolltoTop = document.querySelector(".scroll_to_top")
     scrolltoTop.classList.toggle("show",window.scrollY > 500)

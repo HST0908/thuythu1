@@ -6,13 +6,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" 
     integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link
-        rel="stylesheet"
-        type="text/css"
-        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-      />
-
+    
+    <link rel="stylesheet" href="./assets/libs/aos-master/dist/aos.css" />
+    <!-- slick -->
+    <link rel="stylesheet" href="./assets/libs/slick-1.8.1/slick/slick.css">
 
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/fonts/monsterrat/stylesheet.css">
@@ -21,7 +18,26 @@
 <body>
 
     <!-- phần đầu trang -->
-    <header  id="header" style="background: url('./assets/img/topheader.png'), lightgray -9.153px -85px / 100.749% 184.226% no-repeat;">
+    <header  id="header">
+        <div class="slide__img_header">
+            <div class="img__inner">
+                <div class="img_wrapper">
+                    <img src="./assets/img/Ha-Noi-Viet-Nam-1536x636.png" alt="">
+                </div>
+            </div>
+            <div class="img__inner">
+                <div class="img_wrapper">
+                    <img src="./assets/img/uc-1536x636.png" alt="">
+                </div>
+            </div>
+            <div class="img__inner">
+                <div class="img_wrapper">
+                    <img src="./assets/img/Han-Quoc-1536x636.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="box__header">
         <div class="header__container header__container_fixed">
             <div class="header__top">
                 <div class="header__top--logo">
@@ -36,11 +52,11 @@
                     </li>
                     <li class="header__right--item">
                         <ion-icon name="mail-outline"></ion-icon>
-                        <span>info@ilinkgroupvina.com</span>
+                        <span><a href="mailto:info@ilinkgroupvina.com">info@ilinkgroupvina.com</a></span>
                     </li>
                     <li class="header__right--item">
                         <ion-icon name="call-outline"></ion-icon>
-                        <span>+84 965 001 161</span>
+                        <span><a href="tel:+84965001161">+84 965 001 161</a></span>
                     </li>
                     <li class="header__right--item">
                         <img src="./assets/img/covietnam.png" loading="lazy" alt="" style="width: 28px; height: 28px;">
@@ -93,7 +109,7 @@
                 <li class="sub__header--item"><a href="./lienhe.html">Liên hệ</a></li>
             </div>
         </ul>
-        <div class="tag__header">
+        <!-- <div class="tag__header">
             <div class="tag__header--top">
                 <span>I LINK</span><span>GROUP</span>
             </div>
@@ -101,8 +117,8 @@
                 <span>Job thật! Định cư thật!</span>
             </div>
             <a class="link__header" href="#">Tìm hiểu ngay<ion-icon name="arrow-forward-outline"></ion-icon></a>
-        </div>
-    </header>
+        </div> -->
+    </div>
     <div class="header__mobile">
         <ul class="list_header--mobile">
             <li class="list_header--mobile-item">
@@ -174,7 +190,7 @@
 
         <!-- Thông tin tuyển dụng -->
 
-        <div class="container">
+        <div class="container" data-aos="zoom-in">
             <div class="cointainer__top">
                 <h2>Thông tin nhà tuyển dụng</h2>
                 <span class="cointainer__top--line"></span>
@@ -272,7 +288,7 @@
         </div>
         <!-- recomended -->
 
-        <div class="recomended">
+        <div class="recomended" data-aos="zoom-in-up">
             <div class="cointainer__top">
                 <h2>Chương trình đề xuất</h2>
                 <span class="cointainer__top--line"></span>
@@ -348,7 +364,7 @@
         </div>
 
         <!-- Tin tức định cư -->
-        <section class="no-padding-bottom">
+        <section class="no-padding-bottom"  data-aos="fade-up">
             <div class="content_wrapper">
                 <div class="cointainer__top cointainer__top-about">
                     <h2>Tin tức định cư</h2>
@@ -446,7 +462,8 @@
         </section>
 
         <!-- information -->
-        <div class="information">
+        <div class="information" data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom">
             <div class="cointainer__top">
                 <h2>Thông Tin</h2>
                 <span class="cointainer__top--line"></span>
@@ -539,7 +556,7 @@
         </div>
 
         <!-- Video -->
-        <div class="videoclip">
+        <div class="videoclip pdt-100" data-aos="fade-up-right">
             <div class="cointainer__top">
                 <h2>Video clip</h2>
                 <span class="cointainer__top--line"></span>
@@ -554,8 +571,10 @@
                         </div>
 
                         <div>
-                            <label>Xem thêm</label>
-                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                            <a href="https://www.youtube.com/@ILINKGROUP">
+                                <label>Xem thêm</label>
+                                <ion-icon name="arrow-forward-outline"></ion-icon>
+                            </a>
                         </div>
                     </div>
                     <div class="body__box">
@@ -620,8 +639,10 @@
                         </div>
                         
                         <div>
-                            <label>Xem thêm</label>
-                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                            <a href="https://www.youtube.com/@ILINKGROUP">
+                                <label>Xem thêm</label>
+                                <ion-icon name="arrow-forward-outline"></ion-icon>
+                            </a>
                         </div>
                     </div>
                     <ul class="body__box list__video">
@@ -679,7 +700,7 @@
         </div>
 
         <!-- photo -->
-        <div class="container__photo">
+        <div class="container__photo" data-aos="fade-up-left">
             <div class="cointainer__top">
                 <h2>Hình ảnh công ty</h2>
                 <span class="cointainer__top--line"></span>
@@ -814,7 +835,7 @@
 
         <!-- register of conclussion -->
 
-        <section>
+        <section data-aos="flip-left">
             <div class="conclussion_box">
                 <div class="conclussion_box--left">
                     <div class="conclussion_box--left-content">
@@ -847,19 +868,19 @@
                         </div>
                         <form action="">
                             <div class="form__row1">
-                                <div class="form__col">
+                                <div class="form__col form__col-1">
                                     <input type="text" placeholder="Nhập tên của bạn">
                                 </div>
-                                <div class="form__col">
+                                <div class="form__col form__col-1">
                                     <input type="text" placeholder="Số điện thoại">
                                 </div>
                             </div>
                             
                             <div class="form__row1">
-                                <div class="form__col">
+                                <div class="form__col form__col-1">
                                     <input type="text" placeholder="Email">
                                 </div>
-                                <div class="form__col">
+                                <div class="form__col form__col-1">
                                     <select name="" id="">
                                         <option value="">Tùy chọn 1</option>
                                         <option value="">Tùy chọn 2</option>
@@ -870,13 +891,13 @@
                             </div>
                             
                             <div class="form__row1">
-                                <div class="form__col">
+                                <div class="form__col form__col-1">
                                     <textarea name="" id="" cols="30" rows="3" placeholder="Nhập nội dung"></textarea>
                                 </div>
                             </div>
 
                             <div class="form__row1">
-                                <div class="form__col">
+                                <div class="form__col form__col-1">
                                     <button>
                                         <span>Gửi ngay</span>
                                         <div>
@@ -893,7 +914,7 @@
 
         <!-- counselors -->
 
-        <div class="counselors">
+        <div class="counselors" data-aos="zoom-in">
             <div class="cointainer__top">
                 <h2>Chuyên viên tư vấn</h2>
                 <span class="cointainer__top--line cointainer__top--line-counselors"></span>
@@ -942,7 +963,7 @@
         </div>
 
         <!-- partners customers -->
-        <div class="partners_customers">
+        <div class="partners_customers" data-aos="zoom-out-up">
             <div class="partners_customers__box" style="background: url(./assets/img/background.png);">
                 <div class="cointainer__top">
                     <h2>Đối tác khách hàng</h2>
@@ -1302,25 +1323,36 @@
         <ion-icon name="chevron-back-circle-outline"></ion-icon>
     </div>
 <script src="./assets/js/main.js"></script>
+<script src="./assets/libs/aos-master/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-<script
-  type="text/javascript"
-  src="https://code.jquery.com/jquery-1.11.0.min.js"
-></script>
-<script
-  type="text/javascript"
-  src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
-></script>
-<script
-  type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-></script>
+<!-- slick js -->
+<script type="module" src="./assets/libs/slick-1.8.1/slick/slick.min.js"></script>
+<script src="./assets/libs/jquery-3.7.1.min.js"></script>
 
 <script>
     
     $(document).ready(function(){
+
+
+
+        $('.slide__img_header').slick({
+            slidesToShow: 1,
+            infinite: false,
+            cssEase: 'linear',
+            arrows: 'false',
+            dots: true,
+            autoplay:true,
+            autoplaySpeed:3000
+        });
+
+
+
+
         $('.list__category-box_content').slick({
             slidesToShow: 4,
             infinite: false,
@@ -1365,8 +1397,12 @@
             fade: true,
             cssEase: 'linear',
             asNavFor: '.list--item-recomended',
-            prevArrow:`<button type='button' class='slick-button-custom_2 slick-prev pull-left'><ion-icon name="chevron-back-outline"></ion-icon></button>`,
-            nextArrow:`<button type='button' class='slick-button-custom_2 slick-next pull-right'><ion-icon name="chevron-forward-outline"></ion-icon></button>`,
+            prevArrow:`<button type='button' class='slick-button-custom_2 slick-prev pull-left'><svg xmlns="http://www.w3.org/2000/svg" width="76" height="77" viewBox="0 0 76 77" fill="none">
+  <path d="M47.5 62.5625L23.75 38.5L47.5 14.4375" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></button>`,
+            nextArrow:`<button type='button' class='slick-button-custom_2 slick-next pull-right'><svg xmlns="http://www.w3.org/2000/svg" width="76" height="77" viewBox="0 0 76 77" fill="none">
+<path d="M28.5 14.4375L52.25 38.5L28.5 62.5625" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></button>`,
             responsive: [
                 
                 {
@@ -1384,9 +1420,9 @@
             ]
 
         });
-        /////////////////////////////////////////////////////////////
+        ///////////////////////////////////////////
         $('.list--item-recomended').slick({
-            slidesToShow: 4,
+            slidesToShow: 5,
             infinite: true,
             speed: 1000,
             autoplaySpeed: 5000,
@@ -1427,10 +1463,14 @@
             speed: 1000,
             cssEase: 'linear',
             prevArrow:`<button type='button' class='slick-button-custom_3 slick-prev pull-left'>
-                <ion-icon name="chevron-back-outline"></ion-icon>
+                <svg xmlns="http://www.w3.org/2000/svg" width="53" height="53" viewBox="0 0 53 53" fill="none">
+  <path d="M32.9837 42.8781L16.4922 26.3866L32.9837 9.89502" stroke="#0C265D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
                 </button>`,
             nextArrow:`<button type='button' class='slick-button-custom_3 slick-next pull-right'>
-                <ion-icon name="chevron-forward-outline"></ion-icon>
+                <svg xmlns="http://www.w3.org/2000/svg" width="54" height="53" viewBox="0 0 54 53" fill="none">
+  <path d="M20.5625 9.89502L37.0541 26.3866L20.5625 42.8781" stroke="#0C265D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
                 </button>`,
             responsive: [
                 {
